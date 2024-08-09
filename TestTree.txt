@@ -1,6 +1,11 @@
 -Cameron
 	I am genious
 	And I like cheese
-		I am cheese
+	I am cheese
+	What do you want to do?
+		Eat Cheese
+			-Jamie
+				Hello
+		Be cheese
 -Jamie
 	IMMM REALLY FAT
