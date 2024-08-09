@@ -19,6 +19,11 @@ config/icon="res://icon.svg"
 
 Dialogue="*res://Scene/dialogue.tscn"
 
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="ignore"
+
 [dotnet]
 
 project/assembly_name="Assignment 1"
@@ -38,5 +43,6 @@ space={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
