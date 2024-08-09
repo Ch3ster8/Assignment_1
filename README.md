@@ -1,3 +1,5 @@
+WARNING, PLEASE OPEN THIS FILE IN THE GITHUB EDITOR OR ANOTHER RESPECTIVE IDE TO SHOW INDENTATION
+
 How to:
   Dialogue System:
     The Dialogue system can be used with the understanding of a few keys.
