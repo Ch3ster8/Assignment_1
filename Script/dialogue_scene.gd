@@ -2,17 +2,25 @@ extends CanvasLayer
 @export var label : Label
 var text
 signal next_line
-var line_finished
+signal line_finished
+signal selected(option)
+var wait = true
+var isline_finished
 func load_line(line):
+	wait = true
 	if line:
-		line_finished = false
+		isline_finished = false
 		var typing = ""
 		for letter in line:
 			typing += letter
 			label.text = typing
-			await get_tree().create_timer(0.1).timeout
-		line_finished = true
+			if wait:
+				await get_tree().create_timer(0.1).timeout
+		isline_finished = true
+		emit_signal("line_finished")
 func _process(delta):
-	if line_finished:
-		if Input.is_action_just_pressed("space"):
+	if Input.is_action_just_pressed("space"):
+		if isline_finished:
 			emit_signal("next_line")
+		else:
+			wait = false
