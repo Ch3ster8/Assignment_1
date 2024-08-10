@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmf1kbflnlb7x"]
+[gd_scene load_steps=6 format=3 uid="uid://bmf1kbflnlb7x"]
 
 [ext_resource type="Script" path="res://Script/dialogue_scene.gd" id="1_f46np"]
 [ext_resource type="Texture2D" uid="uid://c7wgdaoijb7e" path="res://Assets/Personal/TextBackround.png" id="2_mlsoj"]
+[ext_resource type="Texture2D" uid="uid://dwlo10hsvv45p" path="res://Assets/Personal/ButtonBackround.png" id="3_rj4fo"]
+[ext_resource type="Texture2D" uid="uid://m0djx0ok4v53" path="res://Assets/Personal/ButtonBackround_Selected.png" id="4_hceem"]
+[ext_resource type="Texture2D" uid="uid://i1lm0eb6e5jw" path="res://Assets/Personal/ButtonBackround_Hovered.png" id="5_ua3yj"]
 
 [node name="DialogueScene" type="CanvasLayer" node_paths=PackedStringArray("label")]
 script = ExtResource("1_f46np")
@@ -33,3 +36,53 @@ offset_bottom = -17.0
 grow_horizontal = 2
 grow_vertical = 0
 autowrap_mode = 3
+
+[node name="VFlowContainer" type="VFlowContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -346.0
+offset_top = -648.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="TextureButton" type="TextureButton" parent="VFlowContainer"]
+custom_minimum_size = Vector2(127, 32)
+layout_mode = 2
+focus_neighbor_top = NodePath("../TextureButton4")
+texture_normal = ExtResource("3_rj4fo")
+texture_pressed = ExtResource("4_hceem")
+texture_hover = ExtResource("5_ua3yj")
+texture_focused = ExtResource("5_ua3yj")
+stretch_mode = 4
+
+[node name="TextureButton2" type="TextureButton" parent="VFlowContainer"]
+custom_minimum_size = Vector2(127, 32)
+layout_mode = 2
+texture_normal = ExtResource("3_rj4fo")
+texture_pressed = ExtResource("4_hceem")
+texture_hover = ExtResource("5_ua3yj")
+texture_focused = ExtResource("5_ua3yj")
+stretch_mode = 4
+
+[node name="TextureButton3" type="TextureButton" parent="VFlowContainer"]
+custom_minimum_size = Vector2(127, 32)
+layout_mode = 2
+texture_normal = ExtResource("3_rj4fo")
+texture_pressed = ExtResource("4_hceem")
+texture_hover = ExtResource("5_ua3yj")
+texture_focused = ExtResource("5_ua3yj")
+stretch_mode = 4
+
+[node name="TextureButton4" type="TextureButton" parent="VFlowContainer"]
+custom_minimum_size = Vector2(127, 32)
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../TextureButton")
+texture_normal = ExtResource("3_rj4fo")
+texture_pressed = ExtResource("4_hceem")
+texture_hover = ExtResource("5_ua3yj")
+texture_focused = ExtResource("5_ua3yj")
+stretch_mode = 4
