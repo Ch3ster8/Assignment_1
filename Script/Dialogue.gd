@@ -59,6 +59,7 @@ func load_tree(tree):
 				else:
 					await say_line(character, line, line_num, text)
 		prev_line = line
+	dialogue_text.queue_free()
 		
 func say_line(character, line, line_num, text):
 	if dialogue_text:
