@@ -8,6 +8,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("e"):
 		load_tree("res://TestTree.txt")
 func load_tree(tree):
+	get_tree().paused = true
 	instance = dialogueScene.instantiate()
 	add_child(instance)
 	dialogue_text = get_child(0)
@@ -39,11 +40,21 @@ func load_tree(tree):
 							if x == prev_num-1:
 								prev_num-=1
 							else:
+								prev_num-=1
 								break
+						print(prev_num)
+						print(inverse_array)
+						'''print(str(prev_num) + " prev_num " + text.values()[prev_num] + " prev_num_text")
+						print(str(prev_num+1) + " prev_num +1 " + text.values()[prev_num+1] + " prev_num_text +1")
+						print(str(line_num) + " line_num " + line + " line_num_text")
+						print(str(line.count("	")) + "line_count")
+						print(str(text.values()[prev_num].count("	")) + " prev_count")
+						print(str(text.values()[prev_num+1].count("	")) + " prev_count +1")'''
 						if line.count("	") >= text.values()[prev_num].count("	"):
-							skip_lines.append(line_num)
-							prev_line = line
-							continue
+							if !line.count("	") < text.values()[prev_num+1].count("	"):
+								skip_lines.append(line_num)
+								prev_line = line
+								continue
 			var charLine = line.replace("	", "")
 			if charLine[0] == "-":
 				character = line.replace("-", "")
@@ -59,7 +70,9 @@ func load_tree(tree):
 				else:
 					await say_line(character, line, line_num, text)
 		prev_line = line
+	skip_lines = []
 	dialogue_text.queue_free()
+	get_tree().paused = false
 		
 func say_line(character, line, line_num, text):
 	if dialogue_text:

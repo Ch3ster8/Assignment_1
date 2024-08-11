@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://6f2ywu6pcuvh" path="res://Scene/option_button.tscn" id="3_wjgev"]
 
 [node name="DialogueScene" type="CanvasLayer" node_paths=PackedStringArray("label", "button_holder")]
+process_mode = 2
 script = ExtResource("1_f46np")
 label = NodePath("Label")
 button_holder = NodePath("VFlowContainer")

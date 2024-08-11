@@ -1,9 +1,11 @@
--Example
+-Example0
 	Example Text
 	Example Question?
 		Example Answer 1
 			-Example
-				1
+				2
+			-Example
+				After 1
 		Example Answer 2
 			-Example
 				2
@@ -12,5 +14,13 @@
 		Example Answer 3
 			-Example
 				3
+		Example Answer 4
+			-Example
+				4
+			-Example4
+				After 4
+		Example Answer 5
+			-Example
+				5
 -Example
 	This will allways be said
