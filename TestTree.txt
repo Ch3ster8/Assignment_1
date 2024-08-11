@@ -1,5 +1,16 @@
--Mum
-	Do your schoolwork bro
-	What do you want to do?
-		Eat Cheese
-		Be cheese
+-Example
+	Example Text
+	Example Question?
+		Example Answer 1
+			-Example
+				1
+		Example Answer 2
+			-Example
+				2
+			-Example
+				After 2
+		Example Answer 3
+			-Example
+				3
+-Example
+	This will allways be said

@@ -2,6 +2,8 @@ extends Node
 @export var dialogueScene : PackedScene
 var instance
 var dialogue_text
+var skip_lines = []
+var reloop = true
 func _process(delta):
 	if Input.is_action_just_pressed("e"):
 		load_tree("res://TestTree.txt")
@@ -14,13 +16,36 @@ func load_tree(tree):
 	var prev_line
 	for line_num in range(text.values().size()):
 		var line = text.values()[line_num]
+		if skip_lines.has(line_num):
+			prev_line = line
+			continue
 		var next_line
 		if text.values().size() > line_num + 1:
 			next_line = text.values()[line_num + 1]
 			if next_line == "":
 				next_line = null
 		if line != "":
-			if line[0] == "-":
+			if prev_line:
+				if skip_lines.has(line_num-1):
+					if line.count("	") >= prev_line.count("	"):
+						skip_lines.append(line_num)
+						prev_line = line
+						continue
+					else:
+						var inverse_array = skip_lines.duplicate()
+						inverse_array.reverse()
+						var prev_num = line_num
+						for x in inverse_array:
+							if x == prev_num-1:
+								prev_num-=1
+							else:
+								break
+						if line.count("	") >= text.values()[prev_num].count("	"):
+							skip_lines.append(line_num)
+							prev_line = line
+							continue
+			var charLine = line.replace("	", "")
+			if charLine[0] == "-":
 				character = line.replace("-", "")
 				character = character.replace("	", "")
 			elif character:
@@ -28,7 +53,8 @@ func load_tree(tree):
 					if line.count("	") == prev_line.count("	"):
 						await say_line(character, line, line_num, text)
 					elif line.count("	") == prev_line.count("	") + 1:
-						if prev_line[0] == "-":
+						charLine = prev_line.replace("	", "")
+						if charLine[0] == "-":
 							await say_line(character, line, line_num, text)
 				else:
 					await say_line(character, line, line_num, text)
@@ -43,7 +69,6 @@ func say_line(character, line, line_num, text):
 		else:
 			var indent_ammount = line.count("	") + 1
 			var options = {}
-			var next_line
 			await dialogue_text.line_finished
 			for new_line_num in range(text.values().size()):
 				if new_line_num <= line_num:
@@ -53,9 +78,14 @@ func say_line(character, line, line_num, text):
 					break
 				if line.count("	") == indent_ammount:
 					options[new_line_num] = line
+					skip_lines.append(new_line_num)
 				elif line.count("	") < indent_ammount:
 					break
-			print(options)
+			for option in options:
+				options[option] = options[option].replace("	", "")
+			dialogue_text.load_options(options)
+			await dialogue_text.next_line
+
 func load_file(filename):
 	var result = {}
 	var file = FileAccess.open(filename, FileAccess.READ)
