@@ -8,6 +8,7 @@ extends CharacterBody2D
 @export var max_stamina : int
 @export var stamina_bar : ProgressBar #This is temporary till I get UI setup
 var stamina_wait := 0
+var running := false
 var speed : int
 var last_anim : String
 var grav_constant : Vector2
@@ -34,15 +35,19 @@ func _physics_process(delta):
 			sprite.flip_h = false
 	elif direction < 0:
 		sprite.flip_h = true
-	print(last_anim)
+	if Input.is_action_pressed("sprint") and stamina >= 1:
+			running = true
+			speed = run_speed
 	if last_anim != "jump" and last_anim != "fall":
 		if !anim_player.current_animation == "land":
 			if direction:
 				if Input.is_action_pressed("sprint") and stamina >= 1:
+					running = true
 					speed = run_speed
 					anim_player.play("run")
 					last_anim = "run"
 				else:
+					running = false
 					speed = walk_speed
 					anim_player.play("walk")
 					last_anim = "walk"
@@ -60,11 +65,11 @@ func _on_stamina_timer_timeout():
 		stamina_wait -= 1
 		if stamina_wait != 0:
 			return
-	if last_anim != "run" and stamina < max_stamina:
+	if !running and stamina < max_stamina:
 		stamina += 1
 
 func _on_run_deplete_timeout():
-	if last_anim == "run" and stamina > 0:
+	if running and stamina > 0:
 		stamina -= 1
 	elif stamina == 0 and stamina_wait == 0:
 		stamina_wait = 5
