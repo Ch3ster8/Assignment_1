@@ -4,15 +4,12 @@ var instance
 var dialogue_text
 var skip_lines = []
 var reloop = true
-func _process(delta):
-	if Input.is_action_just_pressed("e"):
-		load_tree("res://TestTree.txt")
 func load_tree(tree):
 	get_tree().paused = true
 	instance = dialogueScene.instantiate()
 	add_child(instance)
 	dialogue_text = get_child(0)
-	var text = load_file("res://TestTree.txt")
+	var text = load_file(tree)
 	var character
 	var prev_line
 	for line_num in range(text.values().size()):

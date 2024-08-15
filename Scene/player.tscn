@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dakkfmtlc4ijo" path="res://Assets/Outsourced/AnimationSheet_Character.png" id="2_y04hn"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1gp0d"]
-radius = 8.0
+radius = 7.0
 height = 26.0
 
 [sub_resource type="Animation" id="Animation_wegfy"]

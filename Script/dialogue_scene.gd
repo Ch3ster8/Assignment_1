@@ -42,7 +42,7 @@ func select(option, buttons):
 	emit_signal("next_line")
 
 func _process(delta):
-	if Input.is_action_just_pressed("space"):
+	if Input.is_action_just_pressed("up"):
 		if isline_finished:
 			emit_signal("next_line")
 		else:

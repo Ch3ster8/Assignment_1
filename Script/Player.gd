@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 @export var walk_speed : int
 @export var run_speed : int
 @export var jump_height : int
@@ -14,6 +15,8 @@ var last_anim : String
 var grav_constant : Vector2
 @onready var stamina := max_stamina
 func _physics_process(delta):
+	if position.y > 100:
+		global_position = get_closest_respawn()
 	var direction = Input.get_axis("left", "right")
 	var vertical = Input.get_axis("up", "down")
 	if !is_on_floor():
@@ -73,3 +76,15 @@ func _on_run_deplete_timeout():
 		stamina -= 1
 	elif stamina == 0 and stamina_wait == 0:
 		stamina_wait = 5
+
+func get_closest_respawn():
+	var points = get_tree().get_nodes_in_group("respawn")
+	var closest_point = null
+	closest_point = points[0]
+	for point in points:
+		var distance_to_point = global_position.distance_squared_to(point.global_position)
+		var distance_to_closest_point = global_position.distance_squared_to(closest_point.global_position)
+		if (distance_to_point < distance_to_closest_point):
+			if global_position.x > point.global_position.x:
+				closest_point = point
+	return closest_point.global_position
