@@ -9,6 +9,7 @@
 
 [node name="Sign" parent="." instance=ExtResource("1_1mx8i")]
 position = Vector2(-44, 25)
+tree_path = "res://TextTrees/TestTree.txt"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_pl3ey")
@@ -29,7 +30,7 @@ position = Vector2(472, 16)
 
 [node name="Portal" parent="." instance=ExtResource("6_y3x7e")]
 position = Vector2(616, -56)
-next_level = "res://Test.tscn"
+next_level = "res://Scene/levels/level_1.tscn"
 
 [node name="RespawnPoint2" type="Node2D" parent="." groups=["respawn"]]
 position = Vector2(-72, 16)
