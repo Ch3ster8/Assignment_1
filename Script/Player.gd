@@ -25,7 +25,7 @@ func tree_finished():
 	await get_tree().create_timer(0.2).timeout
 	can_move = true
 func _physics_process(delta):
-	if position.y > 100:
+	if position.y > 200:
 		global_position = get_closest_respawn()
 	var direction = Input.get_axis("left", "right")
 	var vertical = Input.get_axis("up", "down")

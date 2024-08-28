@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://wm7l8kmsohfn"]
+
+[ext_resource type="Texture2D" uid="uid://bb2obdigp7dj" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/fantasy-ui-borders.svg" id="1_2k4et"]
+
+[resource]
+atlas = ExtResource("1_2k4et")
+region = Rect2(102, 40, 48, 48)

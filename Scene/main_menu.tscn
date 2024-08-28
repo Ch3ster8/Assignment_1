@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://c73rg7gxuweha"]
+
+[ext_resource type="Texture2D" uid="uid://wm7l8kmsohfn" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_normal.tres" id="1_qdlg4"]
+[ext_resource type="Texture2D" uid="uid://bt68n6nobq5aw" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_pressed.tres" id="2_5wcwv"]
+[ext_resource type="Texture2D" uid="uid://r10xchl20xyr" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_hovered.tres" id="3_0ay4d"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_p7o51"]
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[node name="MainMenu" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 35
+
+[node name="New" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("1_qdlg4")
+texture_pressed = ExtResource("2_5wcwv")
+texture_hover = ExtResource("3_0ay4d")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/New"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "New"
+label_settings = SubResource("LabelSettings_p7o51")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("1_qdlg4")
+texture_pressed = ExtResource("2_5wcwv")
+texture_hover = ExtResource("3_0ay4d")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/Settings"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "Settings"
+label_settings = SubResource("LabelSettings_p7o51")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Quit" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("1_qdlg4")
+texture_pressed = ExtResource("2_5wcwv")
+texture_hover = ExtResource("3_0ay4d")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/Quit"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "Quit"
+label_settings = SubResource("LabelSettings_p7o51")
+horizontal_alignment = 1
+vertical_alignment = 1
