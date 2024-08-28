@@ -4,6 +4,8 @@ var instance
 var dialogue_text
 var skip_lines = []
 var reloop = true
+signal tree_started
+signal tree_finished
 func load_tree(tree):
 	get_tree().paused = true
 	instance = dialogueScene.instantiate()
@@ -12,6 +14,7 @@ func load_tree(tree):
 	var text = load_file(tree)
 	var character
 	var prev_line
+	emit_signal("tree_started")
 	for line_num in range(text.values().size()):
 		var line = text.values()[line_num]
 		if skip_lines.has(line_num):
@@ -70,6 +73,7 @@ func load_tree(tree):
 	skip_lines = []
 	dialogue_text.queue_free()
 	get_tree().paused = false
+	emit_signal("tree_finished")
 		
 func say_line(character, line, line_num, text):
 	if dialogue_text:

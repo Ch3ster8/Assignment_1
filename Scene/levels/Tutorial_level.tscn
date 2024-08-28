@@ -9,7 +9,7 @@
 
 [node name="Sign" parent="." instance=ExtResource("1_1mx8i")]
 position = Vector2(-44, 25)
-tree_path = "res://TextTrees/TestTree.txt"
+tree_path = "res://TextTrees/Tutorial_1.txt"
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource("2_pl3ey")
@@ -21,9 +21,11 @@ position = Vector2(-60, 16)
 
 [node name="Sign2" parent="." instance=ExtResource("1_1mx8i")]
 position = Vector2(88, 24)
+tree_path = "res://TextTrees/Tutorial_2.txt"
 
 [node name="Sign3" parent="." instance=ExtResource("1_1mx8i")]
 position = Vector2(472, 24)
+tree_path = "res://TextTrees/Tutorial_3.txt"
 
 [node name="RespawnPoint" type="Node2D" parent="." groups=["respawn"]]
 position = Vector2(472, 16)

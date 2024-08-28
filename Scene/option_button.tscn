@@ -1,40 +1,38 @@
-[gd_scene load_steps=9 format=3 uid="uid://6f2ywu6pcuvh"]
+[gd_scene load_steps=8 format=3 uid="uid://6f2ywu6pcuvh"]
 
-[ext_resource type="FontFile" uid="uid://dl8b4w37lurif" path="res://Assets/Outsourced/Minecraft.ttf" id="1_n3dxs"]
-[ext_resource type="Texture2D" uid="uid://dwlo10hsvv45p" path="res://Assets/Personal/ButtonBackround.png" id="2_702l6"]
-[ext_resource type="Texture2D" uid="uid://i1lm0eb6e5jw" path="res://Assets/Personal/ButtonBackround_Hovered.png" id="3_e5kn2"]
-[ext_resource type="Texture2D" uid="uid://m0djx0ok4v53" path="res://Assets/Personal/ButtonBackround_Selected.png" id="4_0lvtg"]
+[ext_resource type="Texture2D" uid="uid://dwlo10hsvv45p" path="res://Assets/Personal/ButtonBackround.png" id="1_bq463"]
+[ext_resource type="Texture2D" uid="uid://i1lm0eb6e5jw" path="res://Assets/Personal/ButtonBackround_Hovered.png" id="2_727tu"]
+[ext_resource type="Texture2D" uid="uid://m0djx0ok4v53" path="res://Assets/Personal/ButtonBackround_Selected.png" id="3_jyfha"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iedte"]
-texture = ExtResource("2_702l6")
+texture = ExtResource("1_bq463")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dq65g"]
-texture = ExtResource("3_e5kn2")
+texture = ExtResource("2_727tu")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abp0g"]
-texture = ExtResource("4_0lvtg")
+texture = ExtResource("3_jyfha")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 2.0
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sko4n"]
-texture = ExtResource("3_e5kn2")
+texture = ExtResource("2_727tu")
 texture_margin_left = 5.0
 texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 2.0
 
 [node name="OptionButton" type="Button"]
-theme_override_fonts/font = ExtResource("1_n3dxs")
 theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxTexture_iedte")
 theme_override_styles/hover = SubResource("StyleBoxTexture_dq65g")

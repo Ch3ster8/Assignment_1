@@ -1,0 +1,9 @@
+-God
+	You can use "W A S D" to move arround
+	Do you understand?
+		Yes
+			-God
+				Okay Cool
+		No
+			-God
+				Danm Bro Just get it

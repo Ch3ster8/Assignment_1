@@ -8,59 +8,70 @@ class_name Player
 @export var sprite : Sprite2D
 @export var max_stamina : int
 @export var stamina_bar : ProgressBar #This is temporary till I get UI setup
+var can_move := true
 var stamina_wait := 0
 var running := false
 var speed : int
 var last_anim : String
 var grav_constant : Vector2
 @onready var stamina := max_stamina
+
+func _ready():
+	Dialogue.connect("tree_started", tree_started)
+	Dialogue.connect("tree_finished", tree_finished)
+func tree_started():
+	can_move = false
+func tree_finished():
+	await get_tree().create_timer(0.2).timeout
+	can_move = true
 func _physics_process(delta):
 	if position.y > 100:
 		global_position = get_closest_respawn()
 	var direction = Input.get_axis("left", "right")
 	var vertical = Input.get_axis("up", "down")
-	if !is_on_floor():
-		grav_constant.y += gravity
-		if last_anim == "jump":
-			if grav_constant.y > 0:
-				anim_player.play("fall")
-				last_anim = "fall"
-	else:
-		grav_constant.y = 0
-		if vertical < 0:
-			grav_constant.y = -jump_height
-			anim_player.play("jump")
-			last_anim = "jump"
-		elif last_anim == "fall":
-			anim_player.play("land")
-			last_anim = "land"
-	if direction > 0:
-			sprite.flip_h = false
-	elif direction < 0:
-		sprite.flip_h = true
-	if Input.is_action_pressed("sprint") and stamina >= 1:
-			running = true
-			speed = run_speed
-	if last_anim != "jump" and last_anim != "fall":
-		if !anim_player.current_animation == "land":
-			if direction:
-				if Input.is_action_pressed("sprint") and stamina >= 1:
-					running = true
-					speed = run_speed
-					anim_player.play("run")
-					last_anim = "run"
+	if can_move:
+		if !is_on_floor():
+			grav_constant.y += gravity
+			if last_anim == "jump":
+				if grav_constant.y > 0:
+					anim_player.play("fall")
+					last_anim = "fall"
+		else:
+			grav_constant.y = 0
+			if vertical < 0:
+				grav_constant.y = -jump_height
+				anim_player.play("jump")
+				last_anim = "jump"
+			elif last_anim == "fall":
+				anim_player.play("land")
+				last_anim = "land"
+		if direction > 0:
+				sprite.flip_h = false
+		elif direction < 0:
+			sprite.flip_h = true
+		if Input.is_action_pressed("sprint") and stamina >= 1:
+				running = true
+				speed = run_speed
+		if last_anim != "jump" and last_anim != "fall":
+			if !anim_player.current_animation == "land":
+				if direction:
+					if Input.is_action_pressed("sprint") and stamina >= 1:
+						running = true
+						speed = run_speed
+						anim_player.play("run")
+						last_anim = "run"
+					else:
+						running = false
+						speed = walk_speed
+						anim_player.play("walk")
+						last_anim = "walk"
 				else:
-					running = false
-					speed = walk_speed
-					anim_player.play("walk")
-					last_anim = "walk"
-			else:
-				anim_player.play("idle")
-				last_anim = "idle"
-	
-	stamina_bar.value = stamina
-	velocity = Vector2(direction, 0) * speed + grav_constant
-	move_and_slide()
+					anim_player.play("idle")
+					last_anim = "idle"
+		
+		stamina_bar.value = stamina
+		velocity = Vector2(direction, 0) * speed + grav_constant
+		move_and_slide()
 
 
 func _on_stamina_timer_timeout():

@@ -148,6 +148,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim_player", "sprite", "stamina_bar")]
+process_mode = 3
 script = ExtResource("1_sskci")
 walk_speed = 80
 run_speed = 120

@@ -7,9 +7,10 @@ Stanley Parable: Ultra Deluxe: Component feature: Narator
 	to make a choice of whether their going to follow the narator or make their own coices.
 	
 Firewatch: Component feature: Tough choices
-
+	
 Stanley Parable: Ultra Deluxe vs Firewatch
 	
+
 Branching choices:
 	FLOWCHART LINK HERE
 Level design:
