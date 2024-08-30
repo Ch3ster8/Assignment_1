@@ -17,7 +17,7 @@ func load_line(line):
 			typing += letter
 			label.text = typing
 			if wait:
-				await get_tree().create_timer(0.1).timeout
+				await get_tree().create_timer(0.025).timeout
 		isline_finished = true
 		emit_signal("line_finished")
 		
@@ -42,7 +42,7 @@ func select(option, buttons):
 	emit_signal("next_line")
 
 func _process(delta):
-	if Input.is_action_just_pressed("up"):
+	if Input.is_action_just_pressed("next_line"):
 		if isline_finished:
 			emit_signal("next_line")
 		else:

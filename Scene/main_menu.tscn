@@ -1,16 +1,193 @@
-[gd_scene load_steps=5 format=3 uid="uid://c73rg7gxuweha"]
+[gd_scene load_steps=7 format=3 uid="uid://c73rg7gxuweha"]
 
+[ext_resource type="Script" path="res://Script/main_menu.gd" id="1_cfq1k"]
 [ext_resource type="Texture2D" uid="uid://wm7l8kmsohfn" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_normal.tres" id="1_qdlg4"]
 [ext_resource type="Texture2D" uid="uid://bt68n6nobq5aw" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_pressed.tres" id="2_5wcwv"]
+[ext_resource type="Script" path="res://Script/slots.gd" id="2_oo2cg"]
 [ext_resource type="Texture2D" uid="uid://r10xchl20xyr" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_hovered.tres" id="3_0ay4d"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_p7o51"]
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 
-[node name="MainMenu" type="CanvasLayer"]
+[node name="MainMenu" type="CanvasLayer" node_paths=PackedStringArray("buttons", "slots", "settings")]
+script = ExtResource("1_cfq1k")
+buttons = NodePath("Buttons")
+slots = NodePath("Slots")
+settings = NodePath("Settings")
 
-[node name="Control" type="Control" parent="."]
+[node name="Slots" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_oo2cg")
+tutorial_level = "res://Scene/levels/Tutorial_level.tscn"
+
+[node name="Slot1" type="ColorRect" parent="Slots"]
+offset_left = 188.0
+offset_top = 142.0
+offset_right = 413.0
+offset_bottom = 507.0
+color = Color(0.231373, 0.231373, 0.231373, 0.843137)
+
+[node name="DeleteSlot" type="Button" parent="Slots/Slot1"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Delete Slot"
+
+[node name="Slot1Label" type="Label" parent="Slots/Slot1"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Slot 1"
+horizontal_alignment = 1
+
+[node name="InfoLabel" type="Label" parent="Slots/Slot1"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Time played: 26 minutes
+Current Level: 4
+"
+
+[node name="LoadButton" type="Button" parent="Slots/Slot1"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -157.5
+offset_bottom = -24.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Load Slot"
+
+[node name="Slot2" type="ColorRect" parent="Slots"]
+layout_mode = 2
+offset_left = 463.0
+offset_top = 142.0
+offset_right = 688.0
+offset_bottom = 507.0
+color = Color(0.231373, 0.231373, 0.231373, 0.843137)
+
+[node name="DeleteSlot" type="Button" parent="Slots/Slot2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Delete Slot"
+
+[node name="Slot2Label" type="Label" parent="Slots/Slot2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Slot 2"
+horizontal_alignment = 1
+
+[node name="LoadButton" type="Button" parent="Slots/Slot2"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -157.5
+offset_bottom = -24.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Load Slot"
+
+[node name="InfoLabel" type="Label" parent="Slots/Slot2"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Time played: 26 minutes
+Current Level: 4
+"
+
+[node name="Slot3" type="ColorRect" parent="Slots"]
+offset_left = 738.0
+offset_top = 142.0
+offset_right = 963.0
+offset_bottom = 507.0
+color = Color(0.231373, 0.231373, 0.231373, 0.843137)
+
+[node name="DeleteSlot" type="Button" parent="Slots/Slot3"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Delete Slot"
+
+[node name="Slot3Label" type="Label" parent="Slots/Slot3"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Slot 3"
+horizontal_alignment = 1
+
+[node name="LoadButton" type="Button" parent="Slots/Slot3"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -157.5
+offset_bottom = -24.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Load Slot"
+
+[node name="InfoLabel" type="Label" parent="Slots/Slot3"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Time played: 26 minutes
+Current Level: 4
+"
+
+[node name="Buttons" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,7 +195,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="CenterContainer" type="CenterContainer" parent="Control"]
+[node name="CenterContainer" type="CenterContainer" parent="Buttons"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,11 +203,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/CenterContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Buttons/CenterContainer"]
 layout_mode = 2
 theme_override_constants/separation = 35
 
-[node name="New" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+[node name="Play" type="TextureButton" parent="Buttons/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(150, 75)
 layout_mode = 2
 texture_normal = ExtResource("1_qdlg4")
@@ -38,16 +215,16 @@ texture_pressed = ExtResource("2_5wcwv")
 texture_hover = ExtResource("3_0ay4d")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/New"]
+[node name="Label" type="Label" parent="Buttons/CenterContainer/VBoxContainer/Play"]
 layout_mode = 0
 offset_right = 150.0
 offset_bottom = 75.0
-text = "New"
+text = "Play"
 label_settings = SubResource("LabelSettings_p7o51")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Settings" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+[node name="Settings" type="TextureButton" parent="Buttons/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(150, 75)
 layout_mode = 2
 texture_normal = ExtResource("1_qdlg4")
@@ -55,7 +232,7 @@ texture_pressed = ExtResource("2_5wcwv")
 texture_hover = ExtResource("3_0ay4d")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/Settings"]
+[node name="Label" type="Label" parent="Buttons/CenterContainer/VBoxContainer/Settings"]
 layout_mode = 0
 offset_right = 150.0
 offset_bottom = 75.0
@@ -64,7 +241,7 @@ label_settings = SubResource("LabelSettings_p7o51")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Quit" type="TextureButton" parent="Control/CenterContainer/VBoxContainer"]
+[node name="Quit" type="TextureButton" parent="Buttons/CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(150, 75)
 layout_mode = 2
 texture_normal = ExtResource("1_qdlg4")
@@ -72,7 +249,7 @@ texture_pressed = ExtResource("2_5wcwv")
 texture_hover = ExtResource("3_0ay4d")
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Control/CenterContainer/VBoxContainer/Quit"]
+[node name="Label" type="Label" parent="Buttons/CenterContainer/VBoxContainer/Quit"]
 layout_mode = 0
 offset_right = 150.0
 offset_bottom = 75.0
@@ -80,3 +257,67 @@ text = "Quit"
 label_settings = SubResource("LabelSettings_p7o51")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Settings" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 440
+theme_override_constants/margin_top = 85
+theme_override_constants/margin_right = 440
+theme_override_constants/margin_bottom = 85
+
+[node name="ColorRect" type="ColorRect" parent="Settings/MarginContainer"]
+layout_mode = 2
+color = Color(0.231373, 0.231373, 0.231373, 0.843137)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Settings/MarginContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Window Mode" type="Label" parent="Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "Window Mode:"
+
+[node name="Window Button" type="OptionButton" parent="Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+item_count = 2
+selected = 1
+popup/item_0/text = "FullScreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed"
+popup/item_1/id = 1
+
+[node name="Master Volume" type="Label" parent="Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "Master Volume:"
+
+[node name="Volume Slider" type="HSlider" parent="Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+
+[connection signal="pressed" from="Slots/Slot1/LoadButton" to="Slots" method="_on_load_button_pressed" binds= [1]]
+[connection signal="pressed" from="Slots/Slot2/LoadButton" to="Slots" method="_on_load_button_pressed" binds= [2]]
+[connection signal="pressed" from="Slots/Slot3/LoadButton" to="Slots" method="_on_load_button_pressed" binds= [3]]
+[connection signal="pressed" from="Buttons/CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Buttons/CenterContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Buttons/CenterContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="item_selected" from="Settings/MarginContainer/ColorRect/VBoxContainer/Window Button" to="." method="_on_window_button_item_selected"]
+[connection signal="value_changed" from="Settings/MarginContainer/ColorRect/VBoxContainer/Volume Slider" to="." method="_on_volume_slider_value_changed"]

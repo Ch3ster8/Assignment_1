@@ -72,6 +72,7 @@ func load_tree(tree):
 		prev_line = line
 	skip_lines = []
 	dialogue_text.queue_free()
+	await get_tree().create_timer(0.2).timeout
 	get_tree().paused = false
 	emit_signal("tree_finished")
 		

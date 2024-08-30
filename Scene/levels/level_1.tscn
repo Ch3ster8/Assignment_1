@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dv7jifbabb3g6"]
+[gd_scene load_steps=5 format=3 uid="uid://dv7jifbabb3g6"]
 
 [ext_resource type="TileSet" uid="uid://bjsy6sulef70c" path="res://Scene/levels/level_tilemap.tres" id="1_cexj1"]
 [ext_resource type="PackedScene" uid="uid://c2itt1w5fxvhy" path="res://Scene/player.tscn" id="2_uhl6f"]
+[ext_resource type="PackedScene" uid="uid://bf55ec4memfuv" path="res://Scene/NPCs/npc_sheep.tscn" id="3_djve8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uxr1k"]
 
 [node name="level_1" type="Node2D"]
 
@@ -15,3 +18,10 @@ position = Vector2(279, 0)
 
 [node name="RespawnPoint" type="Node2D" parent="." groups=["respawn"]]
 position = Vector2(279, 0)
+
+[node name="NPC_Sheep" parent="." instance=ExtResource("3_djve8")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Sheep"]
+visible = false
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_uxr1k")

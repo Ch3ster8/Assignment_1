@@ -22,7 +22,6 @@ func _ready():
 func tree_started():
 	can_move = false
 func tree_finished():
-	await get_tree().create_timer(0.2).timeout
 	can_move = true
 func _physics_process(delta):
 	if position.y > 200:
