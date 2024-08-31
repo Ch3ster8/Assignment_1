@@ -1,5 +1,3 @@
-WARNING, PLEASE OPEN THIS FILE IN THE GITHUB EDITOR OR ANOTHER RESPECTIVE IDE TO SHOW INDENTATION
-
 Stanley Parable: Ultra Deluxe and Firewatch are two notable indie games that have received significant attention for their unique approaches to storytelling and gameplay.
 While they share some similarities in their narrative-driven structures they diverve in their specific implementations, offering distinct experiences for players.
 
