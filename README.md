@@ -1,7 +1,7 @@
 WARNING, PLEASE OPEN THIS FILE IN THE GITHUB EDITOR OR ANOTHER RESPECTIVE IDE TO SHOW INDENTATION
 
 
-Stanley Parable: Ultra Deluxe: Component feature: Narator
+1. Stanley Parable: Ultra Deluxe: Component feature: Narator:
     * The first choice that the player has to make is to go through either the left or right door, 
     * the narrator also tells the player to go through the left door, this encourages the player
     * to make a choice of whether their going to follow the narator or make their own coices.
