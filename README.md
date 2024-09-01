@@ -14,7 +14,7 @@ While they share some similarities in their narrative-driven structures they div
    * Puzzle-solving elements: While not the primary focus of Firewatch, the puzzle-solving elements add a layer of challenge and engagement. These puzzles often require players to use their observation and problem-solving skills to overcome obstacles and progress through the story. The puzzles are designed to be integrated into the narrative, providing opportunities for players to learn more bout the game's world and characters.
    * Survival mechanics: The survival mechanics in Firewatch add a sense of realism and danger to the game's setting. Players must manage their resources, stay hydrated, and avoid getting lost in the wilderness. These mechanics create a sense of urgency and tension, forcing players to be mindful of their surroundings and make careful decisions.
 
-1. A critical analysis based on design principles:
+3. A critical analysis based on design principles:
     1. Narrative design:
         * Stanley Parable: Ultra Deluxe excels in its use of meta-narrative, challenging the player's expectations and forcing them to question the nature of their experience. The game's narrator serves as a constant reminder of the artificiality of the game world, inviting players to reflect on the limitations of linear storytelling.
         * Firewatch prioritises environmental storytelling, using the game's settings to convey its themes of isolation and loneliness. The vast wilderness serves as an encounter to reflect his search for meaning in life
@@ -25,7 +25,7 @@ While they share some similarities in their narrative-driven structures they div
         * Stanley Parable: Ultra Deluxe offers players a high degree of agency, allowing them to shape the narrative through their choices. However, the game's self-aware narrator constantly reminds players of the limitations of their agency, suggesting that their choices are ultimately predetermined
         * Firewatch provides players with a sense of agency through exploration and decision-making. While the game's narrative is largely linear, players can choose how they approach the story and interact with the environment.
       
-1. Conclusion:
+4. Conclusion:
     * Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
 	
 
