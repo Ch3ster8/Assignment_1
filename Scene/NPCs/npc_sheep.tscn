@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bf55ec4memfuv"]
 
-[ext_resource type="Script" path="res://Script/Sign.gd" id="1_c7hy4"]
+[ext_resource type="Script" path="res://Script/npc.gd" id="1_kqvo7"]
 [ext_resource type="Texture2D" uid="uid://b5hylejauhygv" path="res://Assets/Outsourced/NPCS V1/Sheep.tres" id="2_eelry"]
 [ext_resource type="Texture2D" uid="uid://blu7hp5nv27ug" path="res://Assets/Personal/Letter_E.png" id="3_62xvl"]
 
@@ -44,9 +44,10 @@ _data = {
 
 [node name="NPC_Sheep" type="Area2D" node_paths=PackedStringArray("input_sprite")]
 position = Vector2(210, -300)
-script = ExtResource("1_c7hy4")
+script = ExtResource("1_kqvo7")
+auto_activate = true
 input_sprite = NodePath("Sheep/InputSprite")
-tree_path = "res://TextTrees/TestTree.txt"
+tree_path = "res://TextTrees/Tutorial_1.txt"
 
 [node name="Sheep" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
