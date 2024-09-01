@@ -11,8 +11,23 @@ While they share some similarities in their narrative-driven structures they div
    * Open-world environment: The vast explorable wilderness of Firewartch provides players with a sense of freedom and isolation. The game's open-world design encourages exploration and discovery, allowing players to uncover hidden secrets and piece together the story's mysteries at their own pace. The environment also serves as a metaphor for the protagonist's internal struggles, reflecting his feeling of loneliness and isolation.
    * Character interactions: The interactions between Henry and other characters in Firewatch add depth and complexity to the narrative. These interactions provide valuable insights into the characters' lives and motivations, helping players to connect with them on a personal level. The relationships that Henry forms also contribute to the game's themes of friendship, trust and misdirection.
    * Environmental storytelling: Firewatch's use of environmental storytelling is a key component of its narrative. The game's visual cues, audio and environmental details provide clues and information about the story's events and characters. By carefully observing the world around them, Ppalyers can piece together the puzzle and uncover the truth behind the mysterious occurrences in the park.
-   * Puzzle-solving elements: Whule not the primary focus of Firewatch, the puzzle-solving elements add a layer of challenge and engagement. These puzzles often require players to use their observation and problem-solving skills to overcome obstacles and progress through the story. The puzzles are designed to be intergrated into the narrative, providing opportunities for players to learn more bout the game';s world and characters.
-   * Survival mechanics: The survival mechanics in Firewatch add a sense of realism and danger to the game's setting.
+   * Puzzle-solving elements: While not the primary focus of Firewatch, the puzzle-solving elements add a layer of challenge and engagement. These puzzles often require players to use their observation and problem-solving skills to overcome obstacles and progress through the story. The puzzles are designed to be integrated into the narrative, providing opportunities for players to learn more bout the game's world and characters.
+   * Survival mechanics: The survival mechanics in Firewatch add a sense of realism and danger to the game's setting. Players must manage their resources, stay hydrated, and avoid getting lost in the wilderness. These mechanics create a sense of urgency and tension, forcing players to be mindful of their surroundings and make careful decisions.
+
+1. A critical analysis based on design principles:
+    1. Narrative design:
+        * Stanley Parable: Ultra Deluxe excels in its use of meta-narrative, challenging the player's expectations and forcing them to question the nature of their experience. The game's narrator serves as a constant reminder of the artificiality of the game world, inviting players to reflect on the limitations of linear storytelling.
+        * Firewatch prioritises environmental storytelling, using the game's settings to convey its themes of isolation and loneliness. The vast wilderness serves as an encounter to reflect his search for meaning in life
+    2. Gameplay Design
+        * Stanley Parable: Ultra Deluxe primarily relies on player choice and exploration. While the game offers limited gameplay mechanics, its focus on narrative and player agency makes it a compelling experience
+        * Firewatch offers a more traditional gameplay experience, combining exploration, puzzle solving and character interactions. The game's open-world environment encourages exploration and discovery, while the character interactions provide a sense of connection and human intimacy.
+    3. Player agency
+        * Stanley Parable: Ultra Deluxe offers players a high degree of agency, allowing them to shape the narrative through their choices. However, the game's self-aware narrator constantly reminds players of the limitations of their agency, suggesting that their choices are ultimately predetermined
+        * Firewatch provides players with a sense of agency through exploration and decision-making. While the game's narrative is largely linear, players can choose how they approach the story and interact with the environment.
+      
+1. Conclusion:
+    * Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
+	
 	
 	
 Stanley Parable: Ultra Deluxe vs Firewatch
