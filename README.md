@@ -28,10 +28,6 @@ While they share some similarities in their narrative-driven structures they div
 1. Conclusion:
     * Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
 	
-	
-	
-Stanley Parable: Ultra Deluxe vs Firewatch
-	
 
 Branching choices:
 	FLOWCHART LINK HERE
