@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bf55ec4memfuv"]
+[gd_scene load_steps=8 format=3 uid="uid://1g2yjivgfesu"]
 
-[ext_resource type="Script" path="res://Script/npc.gd" id="1_kqvo7"]
-[ext_resource type="Texture2D" uid="uid://b5hylejauhygv" path="res://Assets/Outsourced/NPCS V1/Sheep.tres" id="2_eelry"]
-[ext_resource type="Texture2D" uid="uid://blu7hp5nv27ug" path="res://Assets/Personal/Letter_E.png" id="3_62xvl"]
-[ext_resource type="Script" path="res://Script/Sheep.gd" id="4_7uoti"]
-[ext_resource type="PackedScene" uid="uid://d4eubkxgybf4" path="res://Scene/portal.tscn" id="5_3ixkj"]
+[ext_resource type="Script" path="res://Script/npc.gd" id="1_2sh35"]
+[ext_resource type="Texture2D" uid="uid://he6g2qydkcrv" path="res://Assets/Outsourced/NPCS V1/Jefferey.tres" id="2_uusmw"]
+[ext_resource type="Texture2D" uid="uid://blu7hp5nv27ug" path="res://Assets/Personal/Letter_E.png" id="3_rtfuu"]
+[ext_resource type="Script" path="res://Script/Jefferey.gd" id="4_efd8x"]
 
 [sub_resource type="Animation" id="Animation_6733r"]
 length = 0.001
@@ -44,41 +43,36 @@ _data = {
 "idle": SubResource("Animation_61n72")
 }
 
-[node name="NPC_Sheep" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "finish_code")]
+[node name="NPC_Jefferey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "finish_code")]
 position = Vector2(210, -300)
-script = ExtResource("1_kqvo7")
+script = ExtResource("1_2sh35")
 auto_activate = true
-input_sprite = NodePath("Sheep/InputSprite")
-sprite = NodePath("Sheep")
+input_sprite = NodePath("Jefferey/InputSprite")
+sprite = NodePath("Jefferey")
 tree_path = "res://TextTrees/Tutorial_1.txt"
-flip_sprite = null
-finish_code = NodePath("sheep")
+flip_sprite = true
+finish_code = NodePath("Jefferey2")
 
-[node name="Sheep" type="Sprite2D" parent="."]
+[node name="Jefferey" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_eelry")
+texture = ExtResource("2_uusmw")
 hframes = 3
 vframes = 4
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sheep"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Jefferey"]
 libraries = {
 "": SubResource("AnimationLibrary_nmgr0")
 }
 speed_scale = 0.1
 
-[node name="InputSprite" type="Sprite2D" parent="Sheep"]
+[node name="InputSprite" type="Sprite2D" parent="Jefferey"]
 visible = false
 position = Vector2(0, -14)
 scale = Vector2(0.5, 0.5)
-texture = ExtResource("3_62xvl")
+texture = ExtResource("3_rtfuu")
 
-[node name="sheep" type="Node" parent="." node_paths=PackedStringArray("portal_position")]
-script = ExtResource("4_7uoti")
-portal_scene = ExtResource("5_3ixkj")
-portal_position = NodePath("../portal_pos")
-
-[node name="portal_pos" type="Node2D" parent="."]
-position = Vector2(-42, -4)
+[node name="Jefferey2" type="Node" parent="."]
+script = ExtResource("4_efd8x")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
