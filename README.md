@@ -43,7 +43,7 @@ While they share some similarities in their narrative-driven structures they div
 Inspiration taken from these games:
 
 Branching choices:
-	FLOWCHART LINK HERE
+	[FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
  
 Level design:
 	My level designs all have one thing in common, I want the player to feel like they know exactly
@@ -69,16 +69,16 @@ How to:
 	The Dialogue system can be used with the understanding of a few keys.
 	To make a character say something, put a "-" before the character name then 
 	indent everything you want the character to say like this:
-	  -Cameron
+	-Cameron
 	  	I am Cameron
 	  	I like to eat
 	To make a character ask a question you need to put a "?" at the end of the line that will ask the question,
 	then indent all the options you want the player to have access to like this:
 	-Cameron
-	  	What would you like to eat?
-		 Soup
-		 Pasta
-		 Pizza
+		What would you like to eat?
+		   Soup
+		   Pasta
+		   Pizza
 	You can also expand on this by adding new paths indented after a selected option like this:
 	-Cameron
 	  	What would you like to eat?
@@ -91,3 +91,6 @@ How to:
 		 Pizza
 		   -Friend
 			 No comment
+
+Story (Still not included in word count):
+	A young kid gets bullied throughout all of their life for their looks, the kid then resorts to violence and kills his bullies, this causes the local people to exile him through a portal, this story follows the now hooded kid to hide his looks, finding his way back home to finish what he started.
