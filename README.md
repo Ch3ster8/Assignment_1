@@ -96,6 +96,10 @@ How to:
 		 Pizza
 		   -Friend
 			 No comment
+	If you want to have the "tree_finished" signal emmited with an integer you can do
+	< and then the integer you want emitted, it will look like this
+	<1
+	the default for this argument is 0
 
 Story (Still not included in word count):
 	A young kid gets bullied throughout all of their life for their looks, the kid then resorts to violence and kills his bullies, this causes the local people to exile him through a portal, this story follows the now hooded kid to hide his looks, finding his way back home to finish what he started.

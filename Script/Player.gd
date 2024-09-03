@@ -21,7 +21,7 @@ func _ready():
 	Dialogue.connect("tree_finished", tree_finished)
 func tree_started():
 	can_move = false
-func tree_finished():
+func tree_finished(arg1 : int):
 	can_move = true
 func _physics_process(delta):
 	if position.y > 200:

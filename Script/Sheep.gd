@@ -1,7 +1,11 @@
 extends npc
 @export var portal_scene : PackedScene
 @export var portal_position : Node2D
-
-func activate():
-	var instance = portal_scene.instantiate() as Node2D
-	instance.position = portal_position.position
+@export var next_level : String
+func activate(arg1 : int):
+	if arg1 != 0:
+		var instance = portal_scene.instantiate() as Node2D
+		instance.next_level = next_level
+		add_child(instance)
+		instance.global_position = portal_position.global_position
+	

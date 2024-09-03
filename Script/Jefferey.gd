@@ -1,4 +1,4 @@
 extends npc
 
-func activate():
+func activate(arg1 : int):
 	pass

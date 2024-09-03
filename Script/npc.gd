@@ -2,11 +2,14 @@ extends Area2D
 @export var auto_activate := false
 @export var input_sprite : Sprite2D
 @export var sprite : Sprite2D
+@export var animation : AnimationPlayer
 @export var tree_path : String
 @export var flip_sprite := false
 @export var finish_code = Node
 var has_activated = false
 func _ready():
+	if animation:
+		animation.play("idle")
 	if flip_sprite:
 		sprite.flip_h = true
 		
@@ -18,7 +21,7 @@ func _process(delta):
 					if auto_activate or Input.is_action_just_pressed("interact"):
 						has_activated = true
 						Dialogue.load_tree(tree_path)
-						Dialogue.connect("tree_finished", tree_finished)
+						Dialogue.tree_finished.connect(tree_finished_arg)
 
 func _on_body_entered(body):
 	if body.name == "Player":
@@ -30,7 +33,7 @@ func _on_body_exited(body):
 		if !auto_activate:
 			input_sprite.hide()
 			
-func tree_finished():
+func tree_finished_arg(arg1 : int):
 	if finish_code:
 		finish_code = finish_code as npc
-		finish_code.activate()
+		finish_code.activate(arg1)

@@ -1,9 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://1g2yjivgfesu"]
+[gd_scene load_steps=7 format=3 uid="uid://1g2yjivgfesu"]
 
 [ext_resource type="Script" path="res://Script/npc.gd" id="1_2sh35"]
 [ext_resource type="Texture2D" uid="uid://he6g2qydkcrv" path="res://Assets/Outsourced/NPCS V1/Jefferey.tres" id="2_uusmw"]
 [ext_resource type="Texture2D" uid="uid://blu7hp5nv27ug" path="res://Assets/Personal/Letter_E.png" id="3_rtfuu"]
-[ext_resource type="Script" path="res://Script/Jefferey.gd" id="4_efd8x"]
 
 [sub_resource type="Animation" id="Animation_6733r"]
 length = 0.001
@@ -43,15 +42,16 @@ _data = {
 "idle": SubResource("Animation_61n72")
 }
 
-[node name="NPC_Jefferey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "finish_code")]
+[node name="NPC_Jefferey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation", "finish_code")]
 position = Vector2(210, -300)
 script = ExtResource("1_2sh35")
 auto_activate = true
 input_sprite = NodePath("Jefferey/InputSprite")
 sprite = NodePath("Jefferey")
+animation = NodePath("Jefferey/AnimationPlayer")
 tree_path = "res://TextTrees/Tutorial_1.txt"
 flip_sprite = true
-finish_code = NodePath("Jefferey2")
+finish_code = NodePath("")
 
 [node name="Jefferey" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
@@ -70,9 +70,6 @@ visible = false
 position = Vector2(0, -14)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_rtfuu")
-
-[node name="Jefferey2" type="Node" parent="."]
-script = ExtResource("4_efd8x")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

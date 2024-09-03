@@ -1,0 +1,41 @@
+-Sheep
+	Hello, i'm a sheep
+	Yes I know it's rather comical but my name is also Sheep
+	I'd prefer that you respect that name too young one
+	Where are you from young one?
+		Shadown
+			-Sheep
+				Oh I see, you are very far from home are you lost?
+					Yes
+						-Sheep
+							Hmm your parents much be very worried
+							I know someone from that town, let me take you to them
+							<1
+					(Lie) No
+						-You
+							 I'm just making my way back now
+						-??
+							Your lie wasn't very effective, he will remember that.
+						-Sheep
+							Good thing I know someone from that town, let me take you to them
+					No comment
+						-Sheep
+							Thats okay you don't need to tell me
+							Atleast I know someone from that town, let me take you to them
+							<1
+		(Lie) Bilis
+			-??
+				Despite being from Shadown you chose to say your from Bilis
+				Foolish child
+			-Sheep
+				It seems I won't be able to help you with that one
+				I don't know anyone from that town
+				Sorry
+		(Lie) Crown
+			-??
+				Despite being from Shadown you chose to say your from Crown
+				Your not very smart it seems, child
+			-Sheep
+				It seems I won't be able to help you with that one
+				I don't know anyone from that town
+				Sorry
