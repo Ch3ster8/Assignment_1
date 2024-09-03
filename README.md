@@ -41,13 +41,16 @@ While they share some similarities in their narrative-driven structures they div
 	* Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
 
 5. Inspiration taken from these games:
-   	 *
+   	 * I'm drawn to Stanley Parable: Ultra Deluxe's simplistic yet detailed gameplay, being that there are very few actual gameplay mechanics but the storytelling is so in-depth and easy to follow that the player gets sucked into the game anyway.
+   	 * Stanley Parable: Ultra Deluxe's narrator also intrigued me, I liked the idea of having a third party try to persuade the player's choices to their own to give the player a harder time making decisions whilst also allowing the player to follow the creator's pathway.
+   	 * Firewatch does a great job at developing the characters around the player, each choice adds its own characteristic to that character and can change the encounters with them further into the game.
+   	 * Undertale has a great narrative and I liked the character "Sans" because his goal is to kill the human but he's too playful so he decides to deceive the human into thinking he's a good guy and ends up trying to kill him later in the game.
 
 6. Branching choices:
 	 * [FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
  
 7. Level design:
-	 *
+	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision within it, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game
 
 8. Dialogue choices:
 	 *
@@ -59,10 +62,11 @@ While they share some similarities in their narrative-driven structures they div
 	 *
 
 11. How I've implemented branching decisions:
-	 *
+	 * 
  
 12. How these new skills could be transferable:
-	 *
+	 * I believe that every skill I have learnt on this project can be transferable to every other project I do in the future. A branching decision doesn't have to be exclusive to dialogue, it is everywhere, even with movement controls the player is making a branching decision of whether to move left, right, up or down depending on the game. Branching decisions can also be used for things like enemy AI and skill trees, the list goes on. Because I created my own Dialogue system I can also use that in future projects and tweak it to that project's use case.
+	 * Branching decisions are also not exclusive to games, they can be used in things like websites, data storage, analytical software and more, this skill set is widely transferable across all realms of programming not just restricted to game development.
 	
 Optional Tutorial (Not included in word count. Opening the raw file is required for indentation purposes):
 How to:
