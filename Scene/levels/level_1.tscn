@@ -26,6 +26,7 @@ position = Vector2(246.12, -300)
 position = Vector2(279, 0)
 
 [node name="NPC_Sheep" parent="." instance=ExtResource("3_djve8")]
+flip_sprite = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_Sheep"]
 position = Vector2(0, -19.5)

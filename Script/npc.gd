@@ -18,7 +18,7 @@ func _process(delta):
 					if auto_activate or Input.is_action_just_pressed("interact"):
 						has_activated = true
 						Dialogue.load_tree(tree_path)
-						Dialogue.connect("tree_finished", tree_finished())
+						Dialogue.connect("tree_finished", tree_finished)
 
 func _on_body_entered(body):
 	if body.name == "Player":

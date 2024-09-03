@@ -51,7 +51,6 @@ auto_activate = true
 input_sprite = NodePath("Sheep/InputSprite")
 sprite = NodePath("Sheep")
 tree_path = "res://TextTrees/Tutorial_1.txt"
-flip_sprite = null
 finish_code = NodePath("sheep")
 
 [node name="Sheep" type="Sprite2D" parent="."]
