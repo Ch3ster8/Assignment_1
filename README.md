@@ -40,28 +40,29 @@ While they share some similarities in their narrative-driven structures they div
 4. Conclusion:
 	* Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
 
-Inspiration taken from these games:
+5. Inspiration taken from these games:
+   	 *
 
-Branching choices:
-	[FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
+6. Branching choices:
+	 * [FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
  
-Level design:
-	My level designs all have one thing in common, I want the player to feel like they know exactly
-	what to do, one of my biggest gripes of games is getting lost and not knowing where to go so
-	I never want to make a game where the player feels lost, to do this I added a key component
-	called a sign, it allows me to simply tell the player information I want them to know. These
-	signs can also be used like a narrator allowing me to take inspiration from the Stanley parable
-	and implement my own decisions into the game.
+7. Level design:
+	 *
 
-Dialogue choices:
-	
-Testing:
+8. Dialogue choices:
+	 *
 
-Evaluation:
-How ive implemented branching decisions
+9. Testing:
+	 *
 
-How these new skills could be transferable
-	
+10. Evaluation:
+	 *
+
+11. How I've implemented branching decisions:
+	 *
+ 
+12. How these new skills could be transferable:
+	 *
 	
 Optional Tutorial (Not included in word count. Opening the raw file is required for indentation purposes):
 How to:
