@@ -55,8 +55,6 @@ func _physics_process(delta):
 			if !anim_player.current_animation == "land":
 				if direction:
 					if Input.is_action_pressed("sprint") and stamina >= 1:
-						running = true
-						speed = run_speed
 						anim_player.play("run")
 						last_anim = "run"
 					else:
@@ -67,6 +65,9 @@ func _physics_process(delta):
 				else:
 					anim_player.play("idle")
 					last_anim = "idle"
+		else:
+			running = false
+			speed = walk_speed
 		
 		stamina_bar.value = stamina
 		velocity = Vector2(direction, 0) * speed + grav_constant
