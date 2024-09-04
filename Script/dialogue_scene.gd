@@ -8,7 +8,9 @@ signal line_finished
 signal selected(option)
 var wait = true
 var isline_finished
+
 func load_line(line):
+	#Displays the line to the player
 	wait = true
 	if line:
 		isline_finished = false
@@ -22,6 +24,7 @@ func load_line(line):
 		emit_signal("line_finished")
 		
 func load_options(options):
+	#Loads a new button for each option, connects the corresponding signals
 	isline_finished = false
 	var buttons = []
 	for option in options:
@@ -30,18 +33,23 @@ func load_options(options):
 		instance.text = options[option]
 		buttons.append(instance)
 		instance.pressed.connect(select.bind(option, buttons))
-	buttons[0].focus_neighbor_bottom = buttons[-1].get_path()
-	buttons[-1].focus_neighbor_top = buttons[0].get_path()
+	#Sets the neighbors for each button, this is an inbuilt godot feature for keyboard selection
+	for button in buttons.size():
+		buttons[button-1].focus_neighbor_bottom = buttons[button].get_path()
+		buttons[button].focus_neighbor_top = buttons[button-1].get_path()
 	buttons[0].grab_focus()
 	await selected
 	
+#Called when a button is pressed
 func select(option, buttons):
+	#Deletes all the buttons and removes a skip_line at the right place based on arguments
 	for x in buttons:
 		x.queue_free()
 	Dialogue.skip_lines.remove_at(Dialogue.skip_lines.find(option))
 	emit_signal("next_line")
 
 func _process(delta):
+	#Waits for an input and either makes the whole line printed at once or goes to the next line if the line is finished
 	if Input.is_action_just_pressed("next_line"):
 		if isline_finished:
 			emit_signal("next_line")

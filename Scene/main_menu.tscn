@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_oo2cg")
-tutorial_level = "res://Scene/levels/Tutorial_level.tscn"
+tutorial_level = "res://Scene/start_cutscene.tscn"
 
 [node name="Slot1" type="ColorRect" parent="Slots"]
 layout_mode = 0
