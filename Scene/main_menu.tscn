@@ -10,11 +10,14 @@
 font_size = 32
 font_color = Color(0, 0, 0, 1)
 
-[node name="MainMenu" type="CanvasLayer" node_paths=PackedStringArray("buttons", "slots", "settings")]
+[node name="MainMenu" type="CanvasLayer" node_paths=PackedStringArray("buttons", "slots", "settings", "volume_slider", "window_mode")]
+process_mode = 3
 script = ExtResource("1_cfq1k")
 buttons = NodePath("Buttons")
 slots = NodePath("Slots")
 settings = NodePath("Settings")
+volume_slider = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Volume Slider")
+window_mode = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Window Button")
 
 [node name="Slots" type="Control" parent="."]
 visible = false
@@ -33,6 +36,7 @@ offset_left = 188.0
 offset_top = 142.0
 offset_right = 413.0
 offset_bottom = 507.0
+mouse_filter = 1
 color = Color(0.231373, 0.231373, 0.231373, 0.843137)
 
 [node name="DeleteSlot" type="Button" parent="Slots/Slot1"]
@@ -87,6 +91,7 @@ offset_left = 463.0
 offset_top = 142.0
 offset_right = 688.0
 offset_bottom = 507.0
+mouse_filter = 1
 color = Color(0.231373, 0.231373, 0.231373, 0.843137)
 
 [node name="DeleteSlot" type="Button" parent="Slots/Slot2"]
@@ -141,6 +146,7 @@ offset_left = 738.0
 offset_top = 142.0
 offset_right = 963.0
 offset_bottom = 507.0
+mouse_filter = 1
 color = Color(0.231373, 0.231373, 0.231373, 0.843137)
 
 [node name="DeleteSlot" type="Button" parent="Slots/Slot3"]
@@ -282,6 +288,7 @@ theme_override_constants/margin_bottom = 85
 
 [node name="ColorRect" type="ColorRect" parent="Settings/MarginContainer"]
 layout_mode = 2
+mouse_filter = 1
 color = Color(0.231373, 0.231373, 0.231373, 0.843137)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Settings/MarginContainer/ColorRect"]

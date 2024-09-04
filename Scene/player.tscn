@@ -1,7 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://c2itt1w5fxvhy"]
+[gd_scene load_steps=18 format=3 uid="uid://c2itt1w5fxvhy"]
 
 [ext_resource type="Script" path="res://Script/Player.gd" id="1_sskci"]
 [ext_resource type="Texture2D" uid="uid://dakkfmtlc4ijo" path="res://Assets/Outsourced/AnimationSheet_Character.png" id="2_y04hn"]
+[ext_resource type="Script" path="res://Script/Escape_Menu.gd" id="3_cx3l0"]
+[ext_resource type="Texture2D" uid="uid://wm7l8kmsohfn" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_normal.tres" id="3_eh65y"]
+[ext_resource type="Texture2D" uid="uid://bt68n6nobq5aw" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_pressed.tres" id="4_6gqni"]
+[ext_resource type="Texture2D" uid="uid://r10xchl20xyr" path="res://Assets/Outsourced/kenney_fantasy-ui-borders/Vector/button_hovered.tres" id="5_v05jv"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1gp0d"]
 radius = 7.0
@@ -147,6 +151,10 @@ _data = {
 "walk": SubResource("Animation_wfp7h")
 }
 
+[sub_resource type="LabelSettings" id="LabelSettings_h5ox1"]
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
 [node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("anim_player", "sprite", "stamina_bar")]
 process_mode = 3
 script = ExtResource("1_sskci")
@@ -195,5 +203,155 @@ autostart = true
 wait_time = 0.05
 autostart = true
 
+[node name="Escape_Menu" type="CanvasLayer" parent="." node_paths=PackedStringArray("buttons", "settings", "player", "volume_slider", "window_mode")]
+process_mode = 3
+script = ExtResource("3_cx3l0")
+buttons = NodePath("Buttons")
+settings = NodePath("Settings")
+player = NodePath("..")
+can_menu = true
+main_menu = "res://Scene/main_menu.tscn"
+volume_slider = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Volume Slider")
+window_mode = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Window Button")
+
+[node name="Buttons" type="Control" parent="Escape_Menu"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="Escape_Menu/Buttons"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Escape_Menu/Buttons/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 35
+
+[node name="Resume" type="TextureButton" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("3_eh65y")
+texture_pressed = ExtResource("4_6gqni")
+texture_hover = ExtResource("5_v05jv")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Resume"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "Resume"
+label_settings = SubResource("LabelSettings_h5ox1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings1" type="TextureButton" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("3_eh65y")
+texture_pressed = ExtResource("4_6gqni")
+texture_hover = ExtResource("5_v05jv")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Settings1"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "Settings"
+label_settings = SubResource("LabelSettings_h5ox1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Menu" type="TextureButton" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(150, 75)
+layout_mode = 2
+texture_normal = ExtResource("3_eh65y")
+texture_pressed = ExtResource("4_6gqni")
+texture_hover = ExtResource("5_v05jv")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Menu"]
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 75.0
+text = "Menu"
+label_settings = SubResource("LabelSettings_h5ox1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings" type="Control" parent="Escape_Menu"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Escape_Menu/Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 440
+theme_override_constants/margin_top = 85
+theme_override_constants/margin_right = 440
+theme_override_constants/margin_bottom = 85
+
+[node name="ColorRect" type="ColorRect" parent="Escape_Menu/Settings/MarginContainer"]
+layout_mode = 2
+mouse_filter = 1
+color = Color(0.231373, 0.231373, 0.231373, 0.843137)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Escape_Menu/Settings/MarginContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Window Mode" type="Label" parent="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "Window Mode:"
+
+[node name="Window Button" type="OptionButton" parent="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 2
+selected = 1
+popup/item_0/text = "FullScreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed"
+popup/item_1/id = 1
+
+[node name="Master Volume" type="Label" parent="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer"]
+layout_mode = 2
+text = "Master Volume:"
+
+[node name="Volume Slider" type="HSlider" parent="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.05
+value = 0.5
+
 [connection signal="timeout" from="StaminaRegen" to="." method="_on_stamina_timer_timeout"]
 [connection signal="timeout" from="RunDeplete" to="." method="_on_run_deplete_timeout"]
+[connection signal="pressed" from="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Resume" to="Escape_Menu" method="_on_resume_pressed"]
+[connection signal="pressed" from="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Settings1" to="Escape_Menu" method="_on_settings_pressed"]
+[connection signal="pressed" from="Escape_Menu/Buttons/CenterContainer/VBoxContainer/Menu" to="Escape_Menu" method="_on_menu_pressed"]
+[connection signal="item_selected" from="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer/Window Button" to="Escape_Menu" method="_on_window_button_item_selected"]
+[connection signal="value_changed" from="Escape_Menu/Settings/MarginContainer/ColorRect/VBoxContainer/Volume Slider" to="Escape_Menu" method="_on_volume_slider_value_changed"]
