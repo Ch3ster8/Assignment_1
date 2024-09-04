@@ -71,7 +71,16 @@ Testing Feedback:
 12. How these new skills could be transferable:
 	 * The skills I have learnt on this project can be transferred to every other project I do in the future. A branching decision doesn't have to be exclusive to dialogue, even with movement controls the player is making a branching decision of whether to move left, right, up or down depending on the game. Branching decisions can also be used for things like enemy AI and skill trees, the list goes on. Because I created my own Dialogue system I can also use that in future projects and tweak it to that project's use 
 	 * Branching decisions are also not exclusive to games, they can be used in websites, data storage, analytical software and more. This skill set is widely transferable across all realms of programming not just restricted to game development.
-	
+
+References:
+1. All references are Royalty-Free and can be used commercially:
+	 * itch.io. (n.d.). Hooded Protagonist Animated Character by Penzilla. [online] Available at: https://penzilla.itch.io/hooded-protagonist.
+	 * itch.io. (n.d.). Seasonal Tilesets by GrafxKid. [online] Available at: https://grafxkid.itch.io/seasonal-tilesets.
+	 * itch.io. (n.d.). 2D Pixel Art Portal Sprites by Elthen’s Pixel Art Shop. [online] Available at: https://elthen.itch.io/2d-pixel-art-portal-sprites.
+	 * itch.io. (2024). Fantasy UI Borders. [online] Available at: https://kenney-assets.itch.io/fantasy-ui-borders [Accessed 4 Sep. 2024].
+	 * itch.io. (2024b). NPCS Pack. [online] Available at: https://srtoasty.itch.io/npcs-pack-sta-toasty [Accessed 4 Sep. 2024].
+	 * Giphy.com. (2019). Outer Space GIF by Michael Shillingburg - Find & Share on GIPHY. [online] Available at: https://giphy.com/gifs/space-planet-outer-j5mwjor5i5PGigmPH2 [Accessed 4 Sep. 2024].
+
 Optional Tutorial (Not included in word count. Opening the raw file is required for indentation purposes):
 How to:
   Dialogue System:
