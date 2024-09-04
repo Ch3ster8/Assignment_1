@@ -18,6 +18,7 @@ slots = NodePath("Slots")
 settings = NodePath("Settings")
 volume_slider = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Volume Slider")
 window_mode = NodePath("Settings/MarginContainer/ColorRect/VBoxContainer/Window Button")
+cutscene = "res://Scene/start_cutscene.tscn"
 
 [node name="Slots" type="Control" parent="."]
 visible = false

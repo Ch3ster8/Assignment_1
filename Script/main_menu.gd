@@ -4,6 +4,7 @@ extends CanvasLayer
 @export var settings : Control
 @export var volume_slider : HSlider
 @export var window_mode : OptionButton
+@export var cutscene : String
 
 func _ready():
 	settings.hide()
@@ -27,7 +28,7 @@ func _process(delta):
 			
 func _on_play_pressed():
 	buttons.hide()
-	slots.show()
+	get_tree().change_scene_to_file(cutscene)
 
 func _on_settings_pressed():
 	buttons.hide()
