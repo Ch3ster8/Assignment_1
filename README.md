@@ -15,12 +15,10 @@ Stanley Parable: Ultra Deluxe and Firewatch are two indie games known for their 
 3. A critical analysis based on design principles:
 	1. Narrative design:
 		* Stanley Parable: Ultra Deluxe excels in its use of meta-narrative, challenging the player's expectations and forcing them to question the nature of their experience. The game's narrator is a constant reminder of the limitations of linear storytelling.
-		  
-		* Firewatch prioritises environmental storytelling, using the game's settings to convey its themes of isolation and loneliness. The vast wilderness serves as an encounter to reflect and search for meaning in life.
+
 	2. Gameplay Design
 		* Stanley Parable: Ultra Deluxe primarily relies on player choice and exploration. While the game offers limited gameplay mechanics, its focus on narrative and player agency makes it a compelling experience
-		  
-		* Firewatch offers a more traditional gameplay experience, combining exploration, puzzle solving and character interactions. The game's open-world environment encourages exploration and discovery, while the character interactions provide a sense of connection and human intimacy.
+
 	3. Player agency
 		* Stanley Parable: Ultra Deluxe offers players a high degree of freedom, allowing them to shape the narrative through choices. However, the game's self-aware narrator shows limitations to their agency, suggesting that their choices are ultimately predetermined.
 		  
@@ -46,33 +44,33 @@ Stanley Parable: Ultra Deluxe and Firewatch are two indie games known for their 
 	 * I want my dialogue to feel like the player is actually having a conversation with these NPCs, [Jefferey Dialogue](TextTrees/Jefferey1.txt), In the conversation with Jefferey (NPC), the player will speak back to him to create futher game immersion.
 
 Testing Feedback:
-| Person      | Issue | Solution     | Comments |
-| :---:       |    :----:   |    :----:     |     :----:    |
-| Ethan Perkins | No Background | The free asset pack I'm using provides backgrounds so I can just use those | "I want to feel more immersed in the game experience and by not having a background I felt like the character was just wandering on a floating island" |
-| Ethan Perkins | Stamina is too overpowered, there is also a bug with the stamina, while the game is paused stamina will still replenish or deplete | The stamina bar should go down while walking and go down even faster when sprinting, when the bar is completely depleted it should also have a wait time before refilling and the player should be almost completely hindered from movement while out of stamina, also the timers that deal with the stamina just need to be paused along with the game | "Being able to run so fast everywhere around the map felt too overpowered" |
-| Ethan Perkins | No way to kill the NPCs | When the NPCs hate status rating goes below -1 an option will appear in certain scenarios that allow the player to kill them | "If the NPC dislikes you so much to the point where they are getting in your way, you should be able to kill them and it's unfair if you can't" |
-| Ethan Perkins | Returning to the main menu breaks the main menu | This issue was caused by the game being paused when returning to the main menu, to fix this I set the process mode of the main menu to "Allways Active", I also unpause the game when changing to the main menu | "This bug is so stupid, it hinders you from being able to do anything when you return to the main menu PLEASE fix this" |
-| Ethan Perkins | Slots don't work | I can use the save script from my previous assessment to create a save system and use that for my slots | "You should either remove the multiple slots and just have one working one" |
-| Ethan Perkins | Add the fastest time to an ending on the front | I can start a timer from when the player gets into the game and stop the timer when the player exits to the main menu or pauses the game, then I just have to compare the times to the other slots times and display the lowest time on the front | "Displaying the time played on the slots is good for speedrunning purposes but it would be cooler to display the fastest time on the front" |
-| Ethan Perkins | Add a map because there are locations mentioned in dialogue but not shown anywhere in the game | I will draw up a map in Microsoft Paint and display it when either an input is pressed or always in the top right | "The map should show the locations to give the player more immersion into the world you're creating" |
-| Blake Rushworth | Put Jefferey in the wall, like a cave | I can just change the tilemap and place Jefferey where I need him | "This makes the parkour seem way less out of place" |
+| Person      | Issue | Comments |
+| :---:       |  :----:     |     :----:    |
+| Ethan Perkins | No Background | "I want to feel more immersed in the game experience, without a background I felt like the character was just wandering on a floating island" |
+| Ethan Perkins | Stamina is too overpowered and there is bug, while the game is paused stamina will still replenish or deplete | "Being able to run so fast everywhere around the map felt too overpowered" |
+| Ethan Perkins | No way to kill the NPCs | "If the NPC dislikes you so much to the point where they are getting in your way, you should be able to kill them and it's unfair if you can't" |
+| Ethan Perkins | Returning to the main menu breaks the main menu | "This bug is so stupid, it hinders you from being able to do anything when you return to the main menu PLEASE fix this" |
+| Ethan Perkins | Slots don't work | "You should either remove the multiple slots and just have one working one" |
+| Ethan Perkins | Add the fastest time to an ending on the front | "Displaying the time played on the slots is good for speedrunning purposes but it would be cooler to display the fastest time on the front" |
+| Ethan Perkins | Add a map because there are locations mentioned in dialogue but not shown anywhere in the game | "The map should show the locations to give the player more immersion into the world you're creating" |
+| Blake Rushworth | Put Jefferey in the wall, like a cave | "This makes the parkour seem way less out of place" |
 
 10. Evaluation:
-	 * My game executes a clear narrative, displaying messages like "Actions have consequences" and "Truth isn't always the best choice", those are just a few among many
-	 * I have also got over ten branching decisions within my game easily breaking that benchmark of five branching decisions
+	 * My game executes a clear narrative, displaying messages like "Actions have consequences" and "Truth isn't always the best choice", among others
+	 * I have over ten branching decisions within my game, well above the five branching decisions benchmark
 	 * My game contains a fully functioning menu system with limited settings
 	 * The main element that my game has is the Dialogue System created from scratch by myself, this is an extension as opposed to using the premade Dialogue System
-	 * One of my main goals for the game was to have a complete gameplay loop with replayability, I have achieved this goal with the ability to restart a run and choose different branching decisions allowing for multiple different endings
-	 * With more time I would have made a combat system and had more gameplay mechanics to use to my advantage, the current game only have movement and dialogue which is good for making a story but doesn't have many more implications than that, it's like Stanley Parable: Ultra Deluxe however I would have rathered my game be more like Firewatch with at least some puzzles and various things to mess around with
+	 * One of my main goals for the game was to have a complete gameplay loop with replayability. I have achieved this goal with the ability to restart a run and choose different branching decisions allowing for multiple endings
+	 * With more time I would have made a combat system and had more gameplay mechanics to use to my advantage, the current game only has movement and dialogue, good for making a story but doesn't have many more implications, it's like Stanley Parable: Ultra Deluxe however, I would have rathered my game be more like Firewatch with at least some puzzles and different element of game play. 
 
 11. How I've implemented branching decisions:
-	 * Unlike other students in class I decided to make my own Dialogue System rather than using Dialogic, this system works much the same as Dialogue Manager, reading a text file and turning that into the dialogue on screen, this makes making dialogue very easy and intuitive.
-	 * Making my own Dialogue System was a very good choice in my opinion because it allowed me to gain a deeper understanding of how dialogue is actually done in games and it also allowed me to add my own features to it if I want
-	 * I added a small feature to my Dialogue System to allow it to emit a signal with an argument when the dialogue is finished, the argument is an integer that can be set during the dialogue in the text file. This made calling certain operations after the dialogue had finished very easy. I use this feature multiple times throughout my game, one example is with the sheep NPC, if the player chooses the right options to allow the sheep to help them, a portal will open in front of the player, transporting them to another level.
+	 * I decided to make my own Dialogue System rather than using Dialogic, this system works much the same as Dialogue Manager, reading a text file and turning it into dialogue on screen making dialogue very easy and intuitive
+	 * Making my own Dialogue System allowed me to gain a deeper understanding of how dialogue is created in games and it also allowed me to add my own features to it
+	 * I added a small feature to my Dialogue System to allow it to emit a signal with an argument when the dialogue is finished, the argument is an integer that can be set during the dialogue in the text file. This made calling certain functions after the dialogue had finished very easy. An example of this is with the sheep NPC, if the player chooses the right options to allow the sheep to help them, a portal will open in front of the player, transporting them to another level
  
 12. How these new skills could be transferable:
-	 * I believe that every skill I have learnt on this project can be transferable to every other project I do in the future. A branching decision doesn't have to be exclusive to dialogue, it is everywhere, even with movement controls the player is making a branching decision of whether to move left, right, up or down depending on the game. Branching decisions can also be used for things like enemy AI and skill trees, the list goes on. Because I created my own Dialogue system I can also use that in future projects and tweak it to that project's use case.
-	 * Branching decisions are also not exclusive to games, they can be used in things like websites, data storage, analytical software and more, this skill set is widely transferable across all realms of programming not just restricted to game development.
+	 * The skills I have learnt on this project can be transferred to every other project I do in the future. A branching decision doesn't have to be exclusive to dialogue, even with movement controls the player is making a branching decision of whether to move left, right, up or down depending on the game. Branching decisions can also be used for things like enemy AI and skill trees, the list goes on. Because I created my own Dialogue system I can also use that in future projects and tweak it to that project's use 
+	 * Branching decisions are also not exclusive to games, they can be used in websites, data storage, analytical software and more. This skill set is widely transferable across all realms of programming not just restricted to game development.
 	
 Optional Tutorial (Not included in word count. Opening the raw file is required for indentation purposes):
 How to:
