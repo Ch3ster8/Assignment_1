@@ -28,6 +28,7 @@ script = ExtResource("2_oo2cg")
 tutorial_level = "res://Scene/levels/Tutorial_level.tscn"
 
 [node name="Slot1" type="ColorRect" parent="Slots"]
+layout_mode = 0
 offset_left = 188.0
 offset_top = 142.0
 offset_right = 413.0
@@ -135,6 +136,7 @@ Current Level: 4
 "
 
 [node name="Slot3" type="ColorRect" parent="Slots"]
+layout_mode = 0
 offset_left = 738.0
 offset_top = 142.0
 offset_right = 963.0

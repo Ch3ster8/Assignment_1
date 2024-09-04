@@ -42,7 +42,7 @@ _data = {
 "idle": SubResource("Animation_61n72")
 }
 
-[node name="NPC_Sheep" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation", "finish_code")]
+[node name="NPC_Sheep" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation")]
 position = Vector2(210, -300)
 script = ExtResource("1_kqvo7")
 auto_activate = true
@@ -50,7 +50,6 @@ input_sprite = NodePath("Sheep/InputSprite")
 sprite = NodePath("Sheep")
 animation = NodePath("Sheep/AnimationPlayer")
 tree_path = "res://TextTrees/Tutorial_1.txt"
-finish_code = NodePath("")
 
 [node name="Sheep" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)

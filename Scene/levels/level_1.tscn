@@ -49,9 +49,8 @@ next_level = "res://Scene/levels/level_1.tscn"
 [node name="portal_pos" type="Node2D" parent="NPC_Jefferey"]
 position = Vector2(36, -9)
 
-[node name="NPC_Sheep" parent="." node_paths=PackedStringArray("finish_code") instance=ExtResource("3_djve8")]
+[node name="NPC_Sheep" parent="." instance=ExtResource("3_djve8")]
 tree_path = "res://TextTrees/Sheep1.txt"
-finish_code = NodePath("sheep")
 
 [node name="sheep" type="Node" parent="NPC_Sheep" node_paths=PackedStringArray("portal_position")]
 script = ExtResource("4_r6yfi")

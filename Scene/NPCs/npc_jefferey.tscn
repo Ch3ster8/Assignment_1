@@ -42,7 +42,7 @@ _data = {
 "idle": SubResource("Animation_61n72")
 }
 
-[node name="NPC_Jefferey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation", "finish_code")]
+[node name="NPC_Jefferey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation")]
 position = Vector2(210, -300)
 script = ExtResource("1_2sh35")
 auto_activate = true
@@ -51,7 +51,6 @@ sprite = NodePath("Jefferey")
 animation = NodePath("Jefferey/AnimationPlayer")
 tree_path = "res://TextTrees/Tutorial_1.txt"
 flip_sprite = true
-finish_code = NodePath("")
 
 [node name="Jefferey" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
