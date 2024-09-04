@@ -1,50 +1,49 @@
-Stanley Parable: Ultra Deluxe and Firewatch are two notable indie games that have received significant attention for their unique approaches to storytelling and gameplay.
-While they share some similarities in their narrative-driven structures they diverve in their specific implementations, offering distinct experiences for players.
+Stanley Parable: Ultra Deluxe and Firewatch are two indie games known for their unique approaches to storytelling and gameplay. These games share some similarities in their narrative-driven structures but differ in their specific implementations, offering distinct experiences for players.
 
 1. Stanley Parable: Ultra Deluxe:
-	* Self-aware narrator: The narrator in Stanley Parable: Ultra Deluxe is a pivotal component, serving as a constant commentary on the player's actions and the game's narrative. This self-awareness blurs the lines between the game world and the real world, inviting players to question the nature of their experience. The narrator's manipulation of the game's progression challenges the player's sense of agency, suggesting that their choices may be predetermined or irrelevant.
+	* Self-aware narrator: The narrator is a pivotal component, serving as a constant commentary on the player's actions and the game's narrative. This self-awareness blurs the lines between the game world and the real world, inviting players to question the nature of their experience. The narrator's manipulation of the game's progression challenges the player, suggesting that their choices may be predetermined or irrelevant.
 	  
-	* Multiple endings: The game's multiple endings are a direct consequence of the player's choices throughout the narrative. This feature reinforces the illusion of player agency while also highlighting the limitations of choice within a predetermined framework. The endings can vary wildly, from humorous to tragic, demonstrating the narrator's ability to shape the player's experience.
+	* Multiple endings: The game's multiple endings are a direct consequence of the player's choices throughout the narrative. This feature reinforces the illusion of player freedom while also highlighting the limitations of choice within a predetermined framework. The endings can vary wildly, from humorous to tragic, demonstrating the narrator's ability to shape the player's experience.
 	   
-	* Limited gameplay mechanics: While Stanley Parable: Ultra Deluxe offers limited gameplay mechanics, its focus of narrative and player choice is intentional. The game's simplicity allows the narrative to take centre stage, preventing distractions and ensuring that the player's attention is fully engaged. This minimalist approach also highlights the importance of storytelling in video games, demonstrating that a compelling narrative can be more engaging than complex gameplay mechanics.
+	* Limited gameplay mechanics: Stanley Parable: Ultra Deluxe offers limited gameplay mechanics. The game's simplicity allows the narrative to take centre stage ensuring that the player's attention is fully engaged. This minimalist approach highlights the importance of storytelling in video games, demonstrating that a compelling narrative can be more engaging than complex gameplay mechanics.
 	  
 2. Firewatch:
-   * Open-world environment: The vast explorable wilderness of Firewartch provides players with a sense of freedom and isolation. The game's open-world design encourages exploration and discovery, allowing players to uncover hidden secrets and piece together the story's mysteries at their own pace. The environment also serves as a metaphor for the protagonist's internal struggles, reflecting his feeling of loneliness and isolation.
+   * Open-world environment: The game's open-world design encourages exploration and discovery, allowing players to uncover hidden secrets and piece together the story's mysteries at their own pace. The environment also serves as a way to reflect a feeling of loneliness and isolation.
 	 
-   * Character interactions: The interactions between Henry and other characters in Firewatch add depth and complexity to the narrative. These interactions provide valuable insights into the characters' lives and motivations, helping players to connect with them on a personal level. The relationships that Henry forms also contribute to the game's themes of friendship, trust and misdirection.
+   * Character interactions: The interactions between the player and other characters in Firewatch add depth and complexity to the narrative. These interactions provide valuable insights into the characters' lives and motivations, helping players to feel connected.  The relationships that the player forms contribute to the game's themes of friendship and trust.
 
 3. A critical analysis based on design principles:
 	1. Narrative design:
-		* Stanley Parable: Ultra Deluxe excels in its use of meta-narrative, challenging the player's expectations and forcing them to question the nature of their experience. The game's narrator serves as a constant reminder of the artificiality of the game world, inviting players to reflect on the limitations of linear storytelling.
+		* Stanley Parable: Ultra Deluxe excels in its use of meta-narrative, challenging the player's expectations and forcing them to question the nature of their experience. The game's narrator is a constant reminder of the limitations of linear storytelling.
 		  
-		* Firewatch prioritises environmental storytelling, using the game's settings to convey its themes of isolation and loneliness. The vast wilderness serves as an encounter to reflect his search for meaning in life
+		* Firewatch prioritises environmental storytelling, using the game's settings to convey its themes of isolation and loneliness. The vast wilderness serves as an encounter to reflect and search for meaning in life.
 	2. Gameplay Design
 		* Stanley Parable: Ultra Deluxe primarily relies on player choice and exploration. While the game offers limited gameplay mechanics, its focus on narrative and player agency makes it a compelling experience
 		  
 		* Firewatch offers a more traditional gameplay experience, combining exploration, puzzle solving and character interactions. The game's open-world environment encourages exploration and discovery, while the character interactions provide a sense of connection and human intimacy.
 	3. Player agency
-		* Stanley Parable: Ultra Deluxe offers players a high degree of agency, allowing them to shape the narrative through their choices. However, the game's self-aware narrator constantly reminds players of the limitations of their agency, suggesting that their choices are ultimately predetermined
+		* Stanley Parable: Ultra Deluxe offers players a high degree of freedom, allowing them to shape the narrative through choices. However, the game's self-aware narrator shows limitations to their agency, suggesting that their choices are ultimately predetermined.
 		  
-		* Firewatch provides players with a sense of agency through exploration and decision-making. While the game's narrative is largely linear, players can choose how they approach the story and interact with the environment.
+		* Firewatch provides players with a sense of freedom through exploration and decision-making. While the game's narrative is largely linear, players can choose how they approach the story and interact with the environment.
 	  
 4. Conclusion:
-	* Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
+	* Both Stanley Parable: Ultra Deluxe and Firewatch are exceptional examples of narrative-driven games that offer unique and engaging experiences. While they share similarities in their focus on storytelling, their approaches to narrative, gameplay, and player agency differ significantly. Stanley Parable: Ultra Deluxe excels in its meta-narrative and exploration of player agency, while Firewatch offers a more grounded and immersive experience through its environmental storytelling and character interactions. Ultimately, the choice between these two games depends on the player's preferences for narrative style and gameplay mechanics.
 
-5. Inspiration taken from these games:
-   	 * I'm drawn to Stanley Parable: Ultra Deluxe's simplistic yet detailed gameplay, being that there are very few actual gameplay mechanics but the storytelling is so in-depth and easy to follow that the player gets sucked into the game anyway.
-   	 * Stanley Parable: Ultra Deluxe's narrator also intrigued me, I liked the idea of having a third party try to persuade the player's choices to their own to give the player a harder time making decisions whilst also allowing the player to follow the creator's pathway.
-   	 * Firewatch does a great job at developing the characters around the player, each choice adds its own characteristic to that character and can change the encounters with them further into the game.
-   	 * Undertale has a great narrative and I liked the character "Sans" because his goal is to kill the human but he's too playful so he decides to deceive the human into thinking he's a good guy and ends up trying to kill him later in the game.
+5. Inspiration taken from games:
+   	 * I'm drawn to Stanley Parable: Ultra Deluxe's simplistic yet detailed gameplay. Although there are limited gameplay mechanics, the storytelling is in-depth and easy to follow.
+   	 * Stanley Parable: Ultra Deluxe's narrator also intrigued me. I liked the idea of having a third party try to persuade the player's choices while also creating difficulty in decision-making allowing the player to follow the creator's pathway.
+   	 * Firewatch does a great job at developing the characters around the player, each choice adds its own characteristic and can change the encounters further into the game.
+   	 * I further took inspiration from another game, Undertale. This game has a great narrative and I liked the character "Sans" because he is mischievous and leads the player into thinking he is good while trying to kill them. 
 
 6. Branching choices:
 	 * [FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
  
 7. Level design:
-	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision within it, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game, I have also designed my levels to shift seasons to show the distance between the previous level and the current level to allow for more player immersion.
+	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game, I have also designed my levels to shift seasons to show the distance between the previous level and the current level to allow for more player immersion.
 
 8. Dialogue choices:
-	 * [Sheep Dialogue](TextTrees/Sheep1.txt), This is the dialogue I used for my sheep NPC, I used inspiration from Stanley Parable: Ultra Deluxe to make a third mysterious entity like the narrator in Stanley Parable, I also wanted to make each character feel like they have a different personality, the sheep is meant to be friendly and kind no matter what, always trying to help the player out, however, the sheep can also detect lies and will remember if you lie to them, this will affect future interactions with the sheep negatively.
-	 * I also want my dialogue to feel like the player is actually having a conversation with these NPCs, [Jefferey Dialogue](TextTrees/Jefferey1.txt), In the conversation with Jefferey, the player will actually speak back to him to create even more immersion into the world
+	 * [Sheep Dialogue](TextTrees/Sheep1.txt), This is the dialogue I used for my sheep NPC. I used inspiration from Stanley Parable: Ultra Deluxe to make a third mysterious entity like the narrator in Stanley Parable. I wanted to make each character feel like they have a different personality, the sheep is meant to be friendly, kind and always trying to help the player out, however, the sheep can also detect lies and will remember if you lie to them, this will negatively affect future interactions with the sheep.
+	 * I want my dialogue to feel like the player is actually having a conversation with these NPCs, [Jefferey Dialogue](TextTrees/Jefferey1.txt), In the conversation with Jefferey (NPC), the player will speak back to him to create futher game immersion.
 
 Testing Feedback:
 | Person      | Issue | Solution     | Comments |
