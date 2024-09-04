@@ -43,7 +43,8 @@ While they share some similarities in their narrative-driven structures they div
 	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision within it, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game, I have also designed my levels to shift seasons to show the distance between the previous level and the current level to allow for more player immersion.
 
 8. Dialogue choices:
-	 *
+	 * [Sheep Dialogue](TextTrees/Sheep1.txt), This is the dialogue I used for my sheep NPC, I used inspiration from Stanley Parable: Ultra Deluxe to make a third mysterious entity like the narrator in Stanley Parable, I also wanted to make each character feel like they have a different personality, the sheep is meant to be friendly and kind no matter what, always trying to help the player out, however, the sheep can also detect lies and will remember if you lie to them, this will affect future interactions with the sheep negatively.
+	 * I also want my dialogue to feel like the player is actually having a conversation with these NPCs, [Jefferey Dialogue](TextTrees/Jefferey1.txt), In the conversation with Jefferey, the player will actually speak back to him to create even more immersion into the world
 
 Testing Feedback:
 | Person      | Issue | Solution     | Comments |
@@ -58,7 +59,7 @@ Testing Feedback:
 | Blake Rushworth | Put Jefferey in the wall, like a cave | I can just change the tilemap and place Jefferey where I need him | "This makes the parkour seem way less out of place" |
 
 10. Evaluation:
-	 *
+	 * 
 
 11. How I've implemented branching decisions:
 	 * Unlike other students in class I decided to make my own Dialogue System rather than using Dialogic, this system works much the same as Dialogue Manager, reading a text file and turning that into the dialogue on screen, this makes making dialogue very easy and intuitive.
