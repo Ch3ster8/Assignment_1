@@ -59,11 +59,16 @@ Testing Feedback:
 | Blake Rushworth | Put Jefferey in the wall, like a cave | I can just change the tilemap and place Jefferey where I need him | "This makes the parkour seem way less out of place" |
 
 10. Evaluation:
-	 * 
+	 * My game executes a clear narrative, displaying messages like "Actions have consequences" and "Truth isn't always the best choice", those are just a few among many
+	 * I have also got over ten branching decisions within my game easily breaking that benchmark of five branching decisions
+	 * My game contains a fully functioning menu system with limited settings
+	 * The main element that my game has is the Dialogue System created from scratch by myself, this is an extension as opposed to using the premade Dialogue System
+	 * One of my main goals for the game was to have a complete gameplay loop with replayability, I have achieved this goal with the ability to restart a run and choose different branching decisions allowing for multiple different endings
+	 * With more time I would have made a combat system and had more gameplay mechanics to use to my advantage, the current game only have movement and dialogue which is good for making a story but doesn't have many more implications than that, it's like Stanley Parable: Ultra Deluxe however I would have rathered my game be more like Firewatch with at least some puzzles and various things to mess around with
 
 11. How I've implemented branching decisions:
 	 * Unlike other students in class I decided to make my own Dialogue System rather than using Dialogic, this system works much the same as Dialogue Manager, reading a text file and turning that into the dialogue on screen, this makes making dialogue very easy and intuitive.
-	 * Making my own Dialogue System was a very good choice in my opinion because it allowed me to gain a deeper understanding of how dialogue is actually done in games and it also allows me to add my own features to it if I want
+	 * Making my own Dialogue System was a very good choice in my opinion because it allowed me to gain a deeper understanding of how dialogue is actually done in games and it also allowed me to add my own features to it if I want
 	 * I added a small feature to my Dialogue System to allow it to emit a signal with an argument when the dialogue is finished, the argument is an integer that can be set during the dialogue in the text file. This made calling certain operations after the dialogue had finished very easy. I use this feature multiple times throughout my game, one example is with the sheep NPC, if the player chooses the right options to allow the sheep to help them, a portal will open in front of the player, transporting them to another level.
  
 12. How these new skills could be transferable:
