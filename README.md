@@ -55,8 +55,17 @@ While they share some similarities in their narrative-driven structures they div
 8. Dialogue choices:
 	 *
 
-9. Testing:
-	 *
+Testing Feedback:
+| Person      | Issue | Solution     | Comments |
+| :---:       |    :----:   |    :----:     |     :----:    |
+| Ethan Perkins | No Background | The free asset pack I'm using provides backgrounds so I can just use those | "I want to feel more immersed in the game experience and by not having a background I felt like the character was just wandering on a floating island" |
+| Ethan Perkins | Stamina is too overpowered, there is also a bug with the stamina, while the game is paused stamina will still replenish or deplete | The stamina bar should go down while walking and go down even faster when sprinting, when the bar is completely depleted it should also have a wait time before refilling and the player should be almost completely hindered from movement while out of stamina, also the timers that deal with the stamina just need to be paused along with the game | "Being able to run so fast everywhere around the map felt too overpowered" |
+| Ethan Perkins | No way to kill the NPCs | When the NPCs hate status rating goes below -1 an option will appear in certain scenarios that allow the player to kill them | "If the NPC dislikes you so much to the point where they are getting in your way, you should be able to kill them and it's unfair if you can't" |
+| Ethan Perkins | Returning to the main menu breaks the main menu | This issue was caused by the game being paused when returning to the main menu, to fix this I set the process mode of the main menu to "Allways Active", I also unpause the game when changing to the main menu | "This bug is so stupid, it hinders you from being able to do anything when you return to the main menu PLEASE fix this" |
+| Ethan Perkins | Slots don't work | I can use the save script from my previous assessment to create a save system and use that for my slots | "You should either remove the multiple slots and just have one working one" |
+| Ethan Perkins | Add the fastest time to an ending on the front | I can start a timer from when the player gets into the game and stop the timer when the player exits to the main menu or pauses the game, then I just have to compare the times to the other slots times and display the lowest time on the front | "Displaying the time played on the slots is good for speedrunning purposes but it would be cooler to display the fastest time on the front" |
+| Ethan Perkins | Add a map because there are locations mentioned in dialogue but not shown anywhere in the game | I will draw up a map in Microsoft Paint and display it when either an input is pressed or always in the top right | "The map should show the locations to give the player more immersion into the world your creating" |
+| Blake Rushworth | Put Jefferey in the wall, like a cave | I can just change the tilemap and place Jefferey where I need him | "This makes the parkour seem way less out of place" |
 
 10. Evaluation:
 	 *
