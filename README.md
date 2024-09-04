@@ -5,23 +5,13 @@ While they share some similarities in their narrative-driven structures they div
 	* Self-aware narrator: The narrator in Stanley Parable: Ultra Deluxe is a pivotal component, serving as a constant commentary on the player's actions and the game's narrative. This self-awareness blurs the lines between the game world and the real world, inviting players to question the nature of their experience. The narrator's manipulation of the game's progression challenges the player's sense of agency, suggesting that their choices may be predetermined or irrelevant.
 	  
 	* Multiple endings: The game's multiple endings are a direct consequence of the player's choices throughout the narrative. This feature reinforces the illusion of player agency while also highlighting the limitations of choice within a predetermined framework. The endings can vary wildly, from humorous to tragic, demonstrating the narrator's ability to shape the player's experience.
-	  
-	* Timelines and alternate realities: The introduction of timelines and alternate realities adds a layer of complexity to the game's narrative. These elements challenge the player's understanding of causality and the nature of reality. By exporting different possibilities, the game invites players to consider the implications of their choices and the potential consequences of their actions.
-	  
-	* Meta-narrative structure: The game's meta-narrative structure, constantly reflecting on its own existence as a game, is a defining feature. This self-awareness forces players to question the nature of storytelling and the role of the player in shaping the narrative. By breaking the fourth wall, the game invites players to become more conscious of their own participation in the experience.
-	  
+	   
 	* Limited gameplay mechanics: While Stanley Parable: Ultra Deluxe offers limited gameplay mechanics, its focus of narrative and player choice is intentional. The game's simplicity allows the narrative to take centre stage, preventing distractions and ensuring that the player's attention is fully engaged. This minimalist approach also highlights the importance of storytelling in video games, demonstrating that a compelling narrative can be more engaging than complex gameplay mechanics.
 	  
 2. Firewatch:
    * Open-world environment: The vast explorable wilderness of Firewartch provides players with a sense of freedom and isolation. The game's open-world design encourages exploration and discovery, allowing players to uncover hidden secrets and piece together the story's mysteries at their own pace. The environment also serves as a metaphor for the protagonist's internal struggles, reflecting his feeling of loneliness and isolation.
 	 
    * Character interactions: The interactions between Henry and other characters in Firewatch add depth and complexity to the narrative. These interactions provide valuable insights into the characters' lives and motivations, helping players to connect with them on a personal level. The relationships that Henry forms also contribute to the game's themes of friendship, trust and misdirection.
-	 
-   * Environmental storytelling: Firewatch's use of environmental storytelling is a key component of its narrative. The game's visual cues, audio and environmental details provide clues and information about the story's events and characters. By carefully observing the world around them, Ppalyers can piece together the puzzle and uncover the truth behind the mysterious occurrences in the park.
-	 
-   * Puzzle-solving elements: While not the primary focus of Firewatch, the puzzle-solving elements add a layer of challenge and engagement. These puzzles often require players to use their observation and problem-solving skills to overcome obstacles and progress through the story. The puzzles are designed to be integrated into the narrative, providing opportunities for players to learn more bout the game's world and characters.
-	 
-   * Survival mechanics: The survival mechanics in Firewatch add a sense of realism and danger to the game's setting. Players must manage their resources, stay hydrated, and avoid getting lost in the wilderness. These mechanics create a sense of urgency and tension, forcing players to be mindful of their surroundings and make careful decisions.
 
 3. A critical analysis based on design principles:
 	1. Narrative design:
@@ -50,7 +40,7 @@ While they share some similarities in their narrative-driven structures they div
 	 * [FLOWCHART LINK HERE](https://lucid.app/lucidspark/c35f48f0-8313-4861-acf3-5b7b827715ae/edit?viewport_loc=486%2C202%2C4178%2C2081%2C0_0&invitationId=inv_11229b88-6d83-43bf-9f81-a13633a8522a)
  
 7. Level design:
-	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision within it, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game
+	 * I decided to design some of my levels to have their own branching decision, the very first level (not the tutorial) contains its own branching decision within it, by choosing to either go down the hole or parkour up to the sheep, the player makes a massive split in the narrative of the game, I have also designed my levels to shift seasons to show the distance between the previous level and the current level to allow for more player immersion.
 
 8. Dialogue choices:
 	 *
@@ -64,14 +54,16 @@ Testing Feedback:
 | Ethan Perkins | Returning to the main menu breaks the main menu | This issue was caused by the game being paused when returning to the main menu, to fix this I set the process mode of the main menu to "Allways Active", I also unpause the game when changing to the main menu | "This bug is so stupid, it hinders you from being able to do anything when you return to the main menu PLEASE fix this" |
 | Ethan Perkins | Slots don't work | I can use the save script from my previous assessment to create a save system and use that for my slots | "You should either remove the multiple slots and just have one working one" |
 | Ethan Perkins | Add the fastest time to an ending on the front | I can start a timer from when the player gets into the game and stop the timer when the player exits to the main menu or pauses the game, then I just have to compare the times to the other slots times and display the lowest time on the front | "Displaying the time played on the slots is good for speedrunning purposes but it would be cooler to display the fastest time on the front" |
-| Ethan Perkins | Add a map because there are locations mentioned in dialogue but not shown anywhere in the game | I will draw up a map in Microsoft Paint and display it when either an input is pressed or always in the top right | "The map should show the locations to give the player more immersion into the world your creating" |
+| Ethan Perkins | Add a map because there are locations mentioned in dialogue but not shown anywhere in the game | I will draw up a map in Microsoft Paint and display it when either an input is pressed or always in the top right | "The map should show the locations to give the player more immersion into the world you're creating" |
 | Blake Rushworth | Put Jefferey in the wall, like a cave | I can just change the tilemap and place Jefferey where I need him | "This makes the parkour seem way less out of place" |
 
 10. Evaluation:
 	 *
 
 11. How I've implemented branching decisions:
-	 * 
+	 * Unlike other students in class I decided to make my own Dialogue System rather than using Dialogic, this system works much the same as Dialogue Manager, reading a text file and turning that into the dialogue on screen, this makes making dialogue very easy and intuitive.
+	 * Making my own Dialogue System was a very good choice in my opinion because it allowed me to gain a deeper understanding of how dialogue is actually done in games and it also allows me to add my own features to it if I want
+	 * I added a small feature to my Dialogue System to allow it to emit a signal with an argument when the dialogue is finished, the argument is an integer that can be set during the dialogue in the text file. This made calling certain operations after the dialogue had finished very easy. I use this feature multiple times throughout my game, one example is with the sheep NPC, if the player chooses the right options to allow the sheep to help them, a portal will open in front of the player, transporting them to another level.
  
 12. How these new skills could be transferable:
 	 * I believe that every skill I have learnt on this project can be transferable to every other project I do in the future. A branching decision doesn't have to be exclusive to dialogue, it is everywhere, even with movement controls the player is making a branching decision of whether to move left, right, up or down depending on the game. Branching decisions can also be used for things like enemy AI and skill trees, the list goes on. Because I created my own Dialogue system I can also use that in future projects and tweak it to that project's use case.
