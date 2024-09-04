@@ -1,10 +1,10 @@
--God
+-Sign
 	You can jump by pressing "Space" or "W"
 	Note your running speed will continue during the jump
 	Do you understand?
 		Yes
-			-God
+			-Sign
 				Thank god, Oh wait thats me
 		No
-			-God
+			-Sign
 				Jim I know you get it, get outta here

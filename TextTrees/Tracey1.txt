@@ -1,0 +1,31 @@
+-Tracey
+	Well just who are you might you be
+	Oh well
+	What brings you here?
+		Narwhal sent me
+			-Tracey
+				Oh yeah whats up
+			-You
+				I need to get back to Shadown
+			-Tracey
+				Oki doki, one super awesome portal coming right up
+				<1
+		I don't know, I'm scared
+			-Tracey
+				Well that's no good kid
+				Let me help you out
+				Where are you from
+			-You
+				Shadown
+			-Tracey 
+				Oki doki, one super awesome portal coming right up
+				<1
+		I've been looking for you
+			-Tracey
+				Oh well lucky me
+				Whats up
+			-You
+				I need to get back to Shadown
+			-Tracey 
+				Oki doki, one super awesome portal coming right up
+				<2

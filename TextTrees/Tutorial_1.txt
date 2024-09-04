@@ -1,9 +1,9 @@
--God
+-Sign
 	You can use "W A S D" to move arround
 	Do you understand?
 		Yes
-			-God
+			-Sign
 				Okay Cool
 		No
-			-God
+			-Sign
 				Danm Bro Just get it

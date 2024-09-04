@@ -14,6 +14,7 @@
 				Go straight ahead up the hill
 				Tracey will create a portal to Shadown for you
 				Make sure to tell her I sent you
+				<2
 		They attacked me
 			-??
 				Lying to get your way huh
@@ -30,3 +31,4 @@
 				I'm calling the Narlice (Police) on you
 			-You
 				Welp this is it for me
+				<1

@@ -450,7 +450,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Start_cutscene" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
@@ -461,5 +461,5 @@ sprite_frames = SubResource("SpriteFrames_pmchk")
 frame_progress = 0.014239
 speed_scale = 2.5
 script = ExtResource("111_jfeba")
-dialogue_tree = "res://TextTrees/Jefferey1.txt"
+dialogue_tree = "res://TextTrees/start_dialogue.txt"
 first_level = "res://Scene/levels/Tutorial_level.tscn"

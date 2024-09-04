@@ -1,10 +1,10 @@
--God
+-Sign
 	You can also use "Shift" while walking to begin running
 	Note this will drain your stamina
 	Do you understand?
 		Yes
-			-God
+			-Sign
 				Sweet
 		No
-			-God
+			-Sign
 				Please Jim how hard is it

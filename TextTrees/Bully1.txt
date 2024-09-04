@@ -1,0 +1,19 @@
+-Bully
+	What!
+	Hey...
+	You can't be here
+	You were ..
+	Exiled
+-You
+	Well I'm back now
+-Bully
+	Are you gonna kill me?
+		Yes
+			-??
+				<2
+		Fight him (Not kill)
+			-??
+				<3
+		I'm turning myself in
+			-??
+				<4

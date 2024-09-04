@@ -1,0 +1,73 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3q85lahcxcjv"]
+
+[ext_resource type="Script" path="res://Script/npc.gd" id="1_xmmau"]
+[ext_resource type="Texture2D" uid="uid://b8pffrca3qk1q" path="res://Assets/Outsourced/NPCS V1/tracey.tres" id="2_iyy1i"]
+[ext_resource type="Texture2D" uid="uid://blu7hp5nv27ug" path="res://Assets/Personal/Letter_E.png" id="3_p1gfl"]
+
+[sub_resource type="Animation" id="Animation_6733r"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_61n72"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nmgr0"]
+_data = {
+"RESET": SubResource("Animation_6733r"),
+"idle": SubResource("Animation_61n72")
+}
+
+[node name="NPC_Tracey" type="Area2D" node_paths=PackedStringArray("input_sprite", "sprite", "animation")]
+position = Vector2(210, -300)
+script = ExtResource("1_xmmau")
+auto_activate = true
+input_sprite = NodePath("Tracey/InputSprite")
+sprite = NodePath("Tracey")
+animation = NodePath("Tracey/AnimationPlayer")
+tree_path = "res://TextTrees/Tracey1.txt"
+
+[node name="Tracey" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_iyy1i")
+hframes = 3
+vframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Tracey"]
+libraries = {
+"": SubResource("AnimationLibrary_nmgr0")
+}
+speed_scale = 0.1
+
+[node name="InputSprite" type="Sprite2D" parent="Tracey"]
+visible = false
+position = Vector2(0, -14)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_p1gfl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
